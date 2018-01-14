@@ -1,0 +1,96 @@
+/* ------------------
+ styling for the tables 
+   ------------------   */
+ #EJtable{
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+   
+#EJtable .hiconeven
+{
+  border: 2px solid black;
+}
+   
+#EJtable .hiconodd
+{
+  border: 2px solid black;
+}
+
+
+#icon{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:26px;
+	height:26px;
+  
+}
+
+ #EJtable .odd
+{
+  background: #E5E5E5; 
+  border-right: 2px solid black;
+}
+
+#EJtable .even
+{
+ 
+  border-right: 2px solid black;
+}
+
+ #EJtable .odd th
+{ 
+  padding: 4px;
+  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+ #EJtable .odd td
+{
+  border: 1px solid black;
+  padding: 2px;
+  
+}
+
+ #EJtable .even th
+{ 
+  padding: 4px;
+  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+ #EJtable .even td
+{
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#EJtable .total
+{
+ 
+  border-right: 2px solid black;
+}
+
+
+ #EJtable .total th
+{ 
+  padding: 4px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+ #EJtable .total td
+{
+  padding: 2px;
+  border-top: 2px solid black;
+    border-right: 1px solid black;
+	border-bottom: 2px solid black;
+  background: #F2DDDD; 
+}
+
