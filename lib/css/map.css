@@ -3,7 +3,7 @@
     padding: 15px;
     overflow: auto;
     background-color: #efefef !important;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .barchart{
   height:100%;
@@ -321,4 +321,8 @@ a.detaileddata{
 
 .truckinfo {
     color: #894B9E;
+}
+.img-legend {
+    height: 30px;
+    width: 30px;
 }
