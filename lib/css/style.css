@@ -31,8 +31,8 @@ body, .landing, #sidebar {
     background-color: #efefef !important;
 }
 .infowrap, .ofooter, .oheader {
-   /* background-color: #582267 !important; */
-   background-color: #434343 !important;
+    background-color: #582267 !important; 
+   /* background-color: #434343 !important; */
 }
 .infowrap, #infoheader, .footer_btn, .footernav, .ofooter, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar-inverse {
     border-color: #ddd;
@@ -139,8 +139,9 @@ h3 {
     padding-top: 38px;
     margin-bottom: 30px;
     border-bottom: 1px solid #ddd;
-    background: url(images/header_bg.png) center 60% no-repeat no-repeat #dcdcdc;
-    background-size: cover;
+   /* background: url(images/header_bg.png) center 60% no-repeat no-repeat #dcdcdc; */
+    background-color:#efefef;
+ /*   background-size: cover; */
  /*   height: 470px; */
     height: 560px;
 }
@@ -159,12 +160,12 @@ h3 {
     font-size: 12px;
     height: 510px;
 }
-.tod-method h3 {
+.ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
 }
-.tod-method{
-    background-color: rgba(36,171,226,.85);
+.ipd-method{
+    background-color: rgba(88,34,103.85);
     color: white;
     font-size: 14px;
     height:350px;
