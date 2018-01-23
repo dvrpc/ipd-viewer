@@ -143,10 +143,12 @@
             </div>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
-            <ul id="landing" class="nav navbar-nav navbar-right" >
-                <li class="landingLink"><a href="#home"  data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in">&nbsp;&nbsp;Home</a></li>
-                <li class="landingLink"><a  href="https://www.dvrpc.org/GetInvolved/TitleVI/" target="_new">Title VI and Environmental Justice</a></li>
-                <li id="maplink" class="landingUI"><a href="#map" data-tab="map" data-toggle="collapse" data-target=".navbar-collapse.in">Map</a></li>
+                <ul id="landing" class="nav navbar-nav">
+                <li><a href="#home" class="landingLink" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
+                <li><a href="#disclaimer" class="landingLink" data-tab="disclaimer" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
+                <li><a href="#page2" class="landingLink" data-tab="data" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;View Table</a></li>
+              <!--  <li id="maplink" class="mapUI" style="display:none;"><a href="modal_4.html" data-toggle="modal" data-target="#modal_4" ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Unmapped Projects</a></li> -->
+                <li id="maplink" class="landingUI"><a href="#map" data-tab="map" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;View Map</a></li>
             </ul>
            
         </div><!--/.navbar-collapse -->
@@ -161,90 +163,56 @@
                        <!-- <img class='hidden-xs hidden-sm homepage-data-overlay' src='lib/images/TOD_city.jpg'> -->
                         <div class='center-block col-lg-12' style='float:none;display:flex;align-items:stretch'>
                             <div class="col-md-6 col-lg-6 tod-info">
-                                <h3>Transit-Oriented Development (TOD) is a way of building neighborhoods around high-quality transit stations.</h3> 
-                                    <p>These neighborhoods are characterized by their compact design, higher density, and diversity of uses. They provide a range of transportation options that enable residents and workers to drive their cars less while walking, biking, and taking mass transit more often. DVRPC has developed a rating system that evaluates a number of physical, demographic, and economic characteristics in order to identify TOD opportunities throughout the region. These ratings are designed to provide public officials, planners, transit operators, developers, and citizens with resources that can help guide public and private investment at rail stations.
-                                    </p>
-                                            <div class="panel-group" id="accordion" >
-                                            <div class="panel panel-acorn" style="border:0;box-shadow: none;">
-                                            <div class="panel-heading acorn">
-                                            <h4 class="panel-title acorn">
-                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" id="acorn">
-                                            Why measure TOD potential?
-                                            </a>
-                                            </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                            <p>Greater Philadelphia’s extensive and varied rail infrastructure is one of the region’s greatest assets. This infrastructure has shaped the historical growth and development of the region and helped to create many of our most recognizable and cherished communities.  Today, TOD remains an integral part of a centers-based development strategy because it can enhance access to jobs, promote healthy and active lifestyles, and create vibrant communities that help to meet the needs of a changing population.</p>
-                                            </div>
-                                            </div>
-                                            </div>
-
-                                            <div class="panel panel-acorn" style="border:0;box-shadow: none;">
-                                            <div class="panel-heading acorn">
-                                            <h4 class="panel-title acorn">
-                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" id="acorn">
-                                            What do the ratings mean?
-                                            </a>
-                                            </h4>
-                                            </div>
-                                            <div id="collapseTwo" class="panel-collapse collapse">
-                                            <div class="panel-body" >
-                                            <p>The rating system developed for this study provides a broad sense of how individual station areas compare across a variety of factors that establish the foundation for TOD. Station areas that possess quality transit service, strong market demand, and local government support may be good candidates for TOD. See Rating TOD Opportunities for more information on the specific evaluation criteria.</p>
-                                            <p>It is important to note that these scores represent a generalized assessment of TOD opportunities in our region. Lower ratings should not discourage proactive planning efforts designed to make a station area more vibrant, accessible, or attractive. Instead, lower scores can help guide the efforts of those wishing to encourage TOD in a specific location.</p>
-                                            </div>
-                                            </div>
-                                            </div>
-
-                                        </div>
+                                <p>Under <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_new"> Title VI of the Civil Rights Act</a> and the Executive Order on Environmental Justice (#12898), metropolitan planning organizations (MPO) are directed to create a method for ensuring that equity issues are investigated and evaluated in transportation decision-making. There is additional guidance from the Federal Highway Administration’s (FHWA) Environmental Justice recommendations (2017), FHWA’s Title VI and Additional Nondiscrimination requirements (2017), Federal Transit Administration’s (FTA) Environmental Justice policy guidance (2012), and FTA’s Title VI requirements and guidelines (2012). The Indicators of Potential Disadvantage (IPD) analysis is used throughout DVRPC to demonstrate compliance with Title VI of the Civil Rights Act and support the fair treatment of population groups identified through Environmental Justice.  
+                                </p>
+                                <p>The IPD analysis identifies populations of interest under Title VI and EJ using U.S. Census American Community Survey (ACS) 2011-2015 five-year estimates data and maps these populations in each of the Census tracts in the region via GIS. Each population group is an “indicator” in the analysis and includes the following: 
+                                </p>    
+                                <ul style="font-size:90%">
+                                    <li>  Youth</li>
+                                    <li>Older Adults</li>
+                                    <li>Female</li>
+                                    <li>Racial Minority</li>
+                                    <li>Ethnic Minority</li>
+                                    <li>Foreign Born</li>
+                                    <li>Limited English Proficiency</li>
+                                    <li>Disabled</li>
+                                    <li>Low-income</li>
+                                </ul>
+                                <p>This geographic representation is then used to understand the equity issues and impacts of DVRPC’s plans, programs, and planning processes.</p>
+                                         
                             </div> 
                             <div class="col-md-1 col-lg-1">
                             </div>   
                             <div class="col-md-5 col-lg-5 ipd-method">
-                                  <p>
-                                        Title VI of the Civil Rights Act and the Executive Order on Environmental Justice (
-                                        <a class="dialog_link" href="https://www.archives.gov/federal-register/executive-orders/pdf/12898.pdf" target="_blank">#12898</a>
-                                        ) do not provide specific guidance to evaluate EJ issues within a region's transportation planning process. Therefore, MPOs must devise their own methods for ensuring that EJ issues are investigated and evaluated in transportation decision-making. In 2001, DVRPC developed an EJ technical assessment to identify direct and disparate impacts of its plans, programs, and planning processes on defined population groups in the Delaware Valley region. This assessment, the Indicators of Potential Disadvantage (IPD), is utilized in a variety of DVRPC plans and programs. DVRPC currently assesses the following population groups, defined by the
-                                        <a href="https://www.census.gov/" target="_blank">U.S. Census Bureau:</a>
-                                    </p>
-                                      <ul style="font-size:90%">
-                                        <li>Non-Hispanic Minority</li>
-                                        <li>Carless Households</li>
-                                        <li>Households in Poverty</li>
-                                        <li>Female Head of Household with Child</li>
-                                        <li>Elderly (75 years and over)</li>
-                                        <li>Hispanic</li>
-                                        <li>Limited English Proficiency</li>
-                                                <li>Persons with Disabilities</li>
-                                      </ul>
-                                
-                            </div>   
+                                <p>
+                                     Title VI of the Civil Rights Act states that "no person in the United States, shall, on the grounds of race, color, or national origin be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving federal financial assistance. Environmental Justice is defined by the federal government as, "the fair treatment and meaningful involvement of all people regardless of race, color, national origin, or income with respect to the development, implementation, and enforcement of environmental laws, regulations, and policies." Use this resource as a foundational start to identify populations for your equity analyses. For more guidance on how to conduct an equity analyses using this data, please see Federal Transit Administration’s (FTA) Environmental Justice policy guidance (2012). <br><br>
+                                     For additional information on DVRPC's Title VI and EJ activities, visit: Title VI and Environmental Justice 
+                                </p>
+                          
+                            <div class="col-md-6" style="margin-top: 15px;margin-bottom:15px;">
+                            <div class="hp-tool-links">
+                                 <a href="#map" data-toggle="tab" ><img  style="margin:25px 15px 0px 0px;float:left;width: 40px;" src="lib/images/mapicon.png"/></a>
+                                <div class="hp-tool-links-text"><a href="#map" data-toggle="tab" ><h5>VIEW MAP</h5></a>
+                                <p><a href="#map">Explore roadway and transit projects</a></p>
+                               </div>
+                            </div>
+                            </div>
+
+                            <div class="col-md-6" style="margin-top:15px;margin-bottom:15px;">
+                                <div class="hp-tool-links">
+                                    <a href="#page2" data-toggle="tab" ><i class="glyphicon glyphicon-list-alt" style="font-size:300%;color:#008d92;float:left;margin:30px 15px 0px 0px;"></i></a>
+                                <div class="hp-tool-links-text"><a href="#page2" data-toggle="tab" ><h5>VIEW TABLE</h5></a>
+                                <p><a href="#page2">Search the full list of major regional projects</a></p>
+                                </div>
+                                </div>
+                            </div>
+
+                          </div>  
                         </div>
                        </div> 
                     </div>
         <!-- end homepage -->
-
-                    <div class='hidden-xs hidden-sm center-block col-md-12 col-lg-12 ' style='float:none;display:flex;align-items:stretch'>
-                         <div class='col-md-1 col-lg-1'>
-                         </div>
-                         <div class='col-sm-12 col-md-5'>
-                                <div class="hp-tool-links">
-                                    <a href="http://www.dvrpc.org/TOD/" target="_new"><img  style="margin:5px 10px 0px 0px;float:left" src="lib/images/dvrpcicon.png"/></a>
-                                    <h3><span>&nbsp;&nbsp;TOD IN THE REGION</span></h3>
-                                    <p><a href="http://www.dvrpc.org/TOD/" target="_new">Learn more about DVRPC's efforts to promote TOD in the Greater Philadelphia region.</a></p>
-                                </div>
-                            </div>
-                        <div class='col-sm-12 col-md-5'>
-                            <div class="hp-tool-links">
-                                 <a href="#map" data-toggle="tab" ><img  style="margin:5px 10px 0px 0px;float:left" src="lib/images/mapicon.png"/></a>
-                                <div class="hp-tool-links-text"><a href="#map" data-toggle="tab" ><h3>SEE THE MAP</h3></a>
-                                <p><a href="#map">Learn how stations throughout the region compare on attributes that help support TOD.</a></p>
-                               </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class='clearfix'></div>          
+      
                 </div>
                  <!-- data disclaimer -->
                 <section id ='disclaimer' class='tab-pane landing-content'>
@@ -255,21 +223,20 @@
                     </div>
                     <div class='center-block col-lg-10 col-sm-12' style='float:none;'>
                         <div class="col-xs-12 col-sm-6">
-                            <p>The Delaware Valley Regional Planning Commission (DVRPC) excludes any and all implied warranties of merchantability and fitness for any digital file obtained from the Commission. No guarantees are expressed or implied as to the use or application of the digital information supplied. DVRPC assumes no responsibility to maintain them in any manner or form.</p>
-                            <p>DVRPC will not be liable for and the user agrees to hold DVRPC harmless from and against any direct, indirect, special, incidental, or consequential damages arising out of the use or inability to use the material supplied, or arising out of any inaccuracy or defect in the digital information supplied.</p>
-                            <p>Recipients of DVRPC digital files are not entitled to any file revisions, updates, corrections or new releases.</p>
-                            <p>Recipients of DVRPC digital files are encouraged to credit DVRPC as the source of the data when producing maps, graphics, or other documents that utilize DVRPC files.</p>
+                            <p>This web page is a public resource using ACS data. The Delaware Valley Regional Planning Commission (DVRPC) makes no warranty, representation, or guarantee as to the content, sequence, accuracy, timeliness, or completeness of any of the spatial data or database information provided herein. DVRPC and partner state, local, and other agencies shall assume no liability for errors, omissions, or inaccuracies in the information provided regardless of how caused; or any decision made or action taken or not taken by any person relying on any information or data furnished within.</p>
+
+                            <p>The Delaware Valley Regional Planning Commission (DVRPC ) fully complies with Title VI of the Civil Rights Act of 1964, the Civil Rights Restoration Act of 1987, Executive Order 12898 on Environmental Justice, and related nondiscrimination statutes and regulations in all programs and activities. DVRPC's website, www.dvrpc.org, can be translated into multiple languages. Publications and other public documents can be made available in alternative languages and formats, if requested. DVRPC public meetings are always held in ADA-accessible facilities and in transit-accessible locations when possible. Auxiliary services can be provided to individuals who submit a request at least seven days prior to a meeting. Requests made within seven days will be accommodated to the greatest extent possible. Any person who believes they have been aggrieved by an unlawful discriminatory practice by DVRPC under Title VI has a right to file a formal complaint. Any such complaint may be in writing and filed with DVRPC's Title VI Compliance Manager and/or the appropriate state or federal agency within 180 days of the alleged discriminatory occurrence. For more information on DVRPC's Title VI program, or to obtain a Title VI Complaint Form, please call (215) 592-1800 or email public_affairs@dvrpc.org.</p>
                             
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <div class="well well-sm">
                                 <h4>Staff Contact</h4>
                                 <p>
-                                <b>Andrew Svekla</b><br/>
-                                Senior Planning and Design Analyst<br>
-                                Office of Smart Growth<br/>
-                                Phone: 215-238-2810<br/>
-                                Email: <a href="mailto:asvekla@dvrpc.org ">asvekla@dvrpc.org  </a> 
+                                <b>Shoshana Akins </b><br/>
+                                Public Participation Planner <br>
+                                Office of Communications and Engagement <br/>
+                                Phone: 215-238-2817<br/>
+                                Email: <a href="mailto:sakins@dvrpc.org ">sakins@dvrpc.org</a> 
                                 </p>
                         </div>
                             </div>
@@ -404,7 +371,7 @@
             <div style="height:45px;color:white;margin-top:3px">
                 <!-- Landing Footer -->
                 <div id="LandingFooter" class="center">
-                   	<p>Indicators of Potential Disadvantage in Greater Philadelphia ( Version 2.0 )&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#disclaimer" class="hp-link">&nbsp;&nbsp;Disclaimer</a></p>
+                   	<p>Indicators of Potential Disadvantage in the Greater Philadelphia ( Version 2.0 )&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#disclaimer" class="hp-link">&nbsp;&nbsp;Disclaimer</a></p>
                 </div>  
             </div>
         </div> 

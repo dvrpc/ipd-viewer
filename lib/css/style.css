@@ -28,22 +28,44 @@ label {
 /*------- Change to alter color theme  -------------------*/
 /*--------------------------------------------------------*/
 body, .landing, #sidebar {
-    background-color: #efefef !important;
+    background-color: #bca6c2 !important;
 }
 .infowrap, .ofooter, .oheader {
     background-color: #582267 !important; 
    /* background-color: #434343 !important; */
 }
+.infowrap {
+   background-color: #f5f5f5 !important;
+}
 .infowrap, #infoheader, .footer_btn, .footernav, .ofooter, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar-inverse {
     border-color: #ddd;
 }
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .footer_btn:hover {
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover {
     background-color: #DDD;
     border-color:#DDD;
 }
-.footer_btn, #infoheader, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover {
+.footer_btn, #infoheader, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus, .navbar-nav>li>a, .navbar-nav>li>.dropdown  {
   background-color: #E9E9E9;  
 }
+.navbar-inverse .navbar-toggle, .navbar-nav > li > .dropdown-menu {
+    border-color:#E9E9E9;
+}
+#indactorInfo .nav-tabs>li.active>a{
+  /*  border-bottom-color: #6689BC !important; */
+    border-bottom-color: #008d92 !important;
+}
+a, .navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
+    color: #792f8d !important;
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+  /*  background-color: #6689BC !important; */
+    background-color: #008d92 !important;  
+}
+a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-check i:hover{
+  /*  color: #5876A2 !important; */
+    color: #004649 !important; 
+}
+
 .landingLink>a{
   color: #FFFFFF !important;
 }
@@ -137,8 +159,8 @@ h3 {
 .homepage-title {
     float: none;
     padding-top: 38px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ddd;
+  /*  margin-bottom: 30px; */
+ /*   border-bottom: 1px solid #ddd; */
    /* background: url(images/header_bg.png) center 60% no-repeat no-repeat #dcdcdc; */
     background-color:#efefef;
  /*   background-size: cover; */
@@ -168,7 +190,7 @@ h3 {
     background-color: rgba(88,34,103.85);
     color: white;
     font-size: 14px;
-    height:350px;
+
 }
 .hp-tool-links {
     background-color: #FFF;
