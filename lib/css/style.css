@@ -14,11 +14,11 @@ p {
     font-size:13px;
 }
 h1,h2,h3,h4,h5,h6 {
-     /*  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
-  font-family:"Open Sans", sans-serif;
-  font-weight: 500;
+/*  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-family:"Open Sans", sans-serif;
+    font-weight: 500;
     line-height: 1.1;
-    color: #24abe2;
+    color: #582267;
 }
 label {
     font-weight: 400;
@@ -54,6 +54,9 @@ body, .landing, #sidebar {
   /*  border-bottom-color: #6689BC !important; */
     border-bottom-color: #008d92 !important;
 }
+.hp-link {
+    color:white !important;
+}
 a, .navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
     color: #792f8d !important;
 }
@@ -75,10 +78,10 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 .landingUI {
   margin-right:50px;
 }
-.landingLink>a:hover, .landingUI>a:hover {
+/* .landingLink>a:hover, .landingUI>a:hover {
     border-bottom: 3px solid #312867;
     color: #BBE6FA;
-}
+} */
 .navbar-inverse .navbar-toggle, .navbar-nav > li > .dropdown-menu {
     border-color:#E9E9E9;
 }
@@ -212,9 +215,6 @@ h3 {
 }
 .hp-btn-upper {
     margin-bottom: 10px;
-}
-.hp-link {
-    color:white;
 }
 .btn-primary a{
     color: #fff;
