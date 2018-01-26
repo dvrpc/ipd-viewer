@@ -184,16 +184,17 @@ h3 {
     color: black;
     font-size: 12px;
     height: 510px;
+    overflow-y: auto;
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
 }
-.ipd-method{
+.ipd-method {
     background-color: rgba(88,34,103.85);
     color: white;
     font-size: 14px;
-
+    overflow-y: auto;
 }
 .hp-tool-links {
     background-color: #FFF;

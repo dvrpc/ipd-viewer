@@ -138,12 +138,12 @@
                     <span class="icon-bar"></span>
                 </button>
             <div class="navbar-brand">
-                <div class="logo-container"><a href="//www.dvrpc.org" target="_new"><img src="lib/images/dvrpc_logo_small.png" style="margin:0px 10px 0px 3px;" id="dvrpc-logo"/></a> Indicators of Potential Disadvantage</div>
+                <div class="logo-container"><a href="//www.dvrpc.org" target="_new"><img src="lib/images/header_dvrpc.png" style="margin:0px 10px 0px 3px;height:35px" id="dvrpc-logo"/></a> Indicators of Potential Disadvantage</div>
                
             </div>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
-                <ul id="landing" class="nav navbar-nav">
+                <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#home" class="landingLink" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
                 <li><a href="#disclaimer" class="landingLink" data-tab="disclaimer" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
                 <li><a href="#page2" class="landingLink" data-tab="data" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;Methodoloy</a></li>
@@ -199,9 +199,9 @@
 
                             <div class="col-md-6" style="margin-top:15px;margin-bottom:15px;">
                                 <div class="hp-tool-links">
-                                    <a href="#page2" data-toggle="tab" ><i class="glyphicon glyphicon-list-alt" style="font-size:300%;float:left;margin:30px 15px 0px 0px;"></i></a>
-                                <div class="hp-tool-links-text"><a href="#page2" data-toggle="tab" ><h5>DATA DOWNLOAD</h5></a>
-                                <p><a href="#page2">Access and download the data</a></p>
+                                    <a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2015-indicators-of-potential-disadvantage" target="_new" ><i class="glyphicon glyphicon-list-alt" style="font-size:300%;float:left;margin:30px 15px 0px 0px;"></i></a>
+                                <div class="hp-tool-links-text"><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2015-indicators-of-potential-disadvantage" target="_new" ><h5>DATA DOWNLOAD</h5></a>
+                                <p><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2015-indicators-of-potential-disadvantage" target="_new">Access and download the data</a></p>
                                 </div>
                                 </div>
                             </div>
@@ -248,11 +248,17 @@
     <!--Map and Sidebar-->
        <div class="row ocontent mapUI" id="container">
             <div class="col-sm-5 col-lg-5" id="mapsidebar">
-              <div id="Map-layers">
-                    <ul class="nav navbar-nav navbar-right">     
-                        <li class="dropdown">
-                          <a id="toolsDrop" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-list-alt"></i>&nbsp;Choose a Population Group</a>
-                          <ul class="dropdown-menu" >
+               
+            <div class="row" id="barcharts" style="margin-top:5px"> 
+             
+
+             <div id="cardclick">
+             <h2>Click on a census tract to learn more about its IPD.</h2>
+             </div>
+             <div id="Map-layers">
+                <div class="btn-group tradeBtn">
+                     <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle">Choose a Population Group<span class="caret"></span></button>
+                        <ul class="dropdown-menu" >
                             <li>
                               <a href="#" data-value="NewScoreMe" >
                                 <img class="img-legend" src="lib/images/7.png" > Indicators of Potential Disadvantage (IPD)</a>
@@ -273,7 +279,7 @@
                               <a href="#" data-value="RaceMin_11" >
                                 <img class="img-legend" src="lib/images/9.png" > Racial Minority</a>
                             </li>
-                        <li>
+                            <li>
                               <a href="#" data-value="EthnMin_11" >
                                 <img class="img-legend" src="lib/images/9.png"> Ethnic Minority</a>
                             </li>
@@ -289,20 +295,13 @@
                               <a href="#" data-value="Disabled_7" >
                                 <img class="img-legend" src="lib/images/5.png" > Disabled</a>
                             </li>
-                           <li>
+                            <li>
                               <a href="#" data-value="LowInc_S_1" >
                                 <img class="img-legend" src="lib/images/6.png" > Low Income</a>
                             </li>
-                          </ul>
-                        </li>  
-                    </ul> 
-                </div>   
-            <div class="row" id="barcharts" style="margin-top:45px"> 
-             
-
-             <div id="cardclick">
-             <h2>Click on a census tract to learn more about its IPD.</h2>
-             </div>
+                        </ul>
+                </div>
+            </div>  
 
              <div class="panel panel-primary" id="mapcard"> 
              </div>
