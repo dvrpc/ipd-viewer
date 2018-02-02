@@ -28,7 +28,7 @@ margin: 0px 10px 0px 10px;
   margin-bottom: 5px;
 }
 #MapButtons{
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 #mapcard{
   background-color: rgb(16,44,71);
@@ -78,6 +78,7 @@ color: rgb(102, 102, 102);
   background-color:#EFEFEF;
   display:none; 
   margin-left: 5px;
+  height:300px;
 }
 #cardbike{
   background-color:#EFEFEF;

@@ -251,10 +251,10 @@
                
             <div class="row" id="barcharts" style="margin-top:5px"> 
              
-
              <div id="cardclick">
              <h2>Click on a census tract to learn more about its IPD.</h2>
              </div>
+
              <div id="Map-layers">
                 <div class="btn-group tradeBtn">
                      <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle">Choose a Population Group<span class="caret"></span></button>
@@ -301,52 +301,37 @@
                             </li>
                         </ul>
                 </div>
-            </div>  
+            </div> 
+            <div class="panel panel-primary" id="mapcard"></div>
 
-             <div class="panel panel-primary" id="mapcard"> 
-             </div>
-
-              <div id="stationinfo_all" class="stationinfo_all"></div> 
-                
-
-
-                <div id="MapButtons-title" class="hp_label">Select a scoring method:</div>
-                <div id="MapButtons" class="btn-group" data-toggle="buttons">
+            <div id="stationinfo_all" class="stationinfo_all"></div> 
+            
+         
+            
+            <div id="MapButtons" class="btn-group" data-toggle="buttons">
+                <div style="float:left">Select a scoring method:</div>
                 <label class="btn btn-primary btn-sm active" id="mapchart-btn">
                 <input type="radio" checked><i class="glyphicon glyphicon-align-left"></i><a id="home-tab" href="#mapchart-main"role="tab" style="color:#fff !important">&nbsp;&nbsp;Category Scoring</a>
                 </label>
                 <label class="btn btn-primary btn-sm" id="mapdata-btn">
                 <input type="radio"><i class="glyphicon glyphicon-list-alt"></i><a id="payment-tab" href="#mapdata-main" role="tab" style="color:#fff !important">&nbsp;&nbsp;Data Measurement</a>
                 </label>
-                </div>
-            <div class="col-sm-11" >
-                
-            <div class="panel panel-primary" id="cardbikepanel">
-         <!--   <div class="panel-heading" id="cardbike">
-              <div id="card-title">Existing Conditions</div> 
-                
-            </div> -->
-                <div class="tab-content" id="MapTabs">
-           <!--      <i class="cat-desc" >(click category name for description)</i> -->
-                <div id="mapchart-main" class="tab-pane fade in active">
-                <div id="existingOV-data" class="data-info"></div> 
-               <!-- <div id="existingOV" class="barchart"></div> -->
-                <div id="existing" class="barchart"></div>
-            <!--    <div id="futureOV-data" class="data-info"></div>  -->
-               <!-- <div id="futureOV" class="barchart"></div> -->
-            <!--    <div id="future" class="barchart"></div> -->
-                </div>
-                <div id="mapdata-main" class="tab-pane fade">
-               
-                <div id="existing-data" class="data-info2"></div> 
-             
-             <!--   <div id="future-data" class="data-info2"></div>  -->
-                </div>
-                </div>
-    
-    
             </div>
-                
+        
+
+            <div class="col-sm-11" >
+                <div class="panel panel-primary" id="cardbikepanel">
+                <div class="tab-content" id="MapTabs">
+                    <div id="mapchart-main" class="tab-pane fade in active">
+                    <div id="existingOV-data" class="data-info"></div> 
+                    <div id="existing" class="barchart"></div>
+                    </div>
+
+                    <div id="mapdata-main" class="tab-pane fade">  
+                    <div id="existing-data" class="data-info2"></div> 
+                    </div>
+                </div>
+                </div>
             </div>
 
           </div>
