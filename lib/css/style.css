@@ -13,6 +13,9 @@ p {
   font-family:"Open Sans", sans-serif;
     font-size:13px;
 }
+h1 {
+    font-size: 24px;
+}
 h1,h2,h3,h4,h5,h6 {
 /*  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
     font-family:"Open Sans", sans-serif;
@@ -28,7 +31,8 @@ label {
 /*------- Change to alter color theme  -------------------*/
 /*--------------------------------------------------------*/
 body, .landing, #sidebar {
-    background-color: #bca6c2 !important;
+  /*  background-color: #bca6c2 !important; */
+    background-color: #efefef !important;
 }
 .infowrap, .ofooter, .oheader {
  /*    background-color: #582267 !important; */
@@ -155,9 +159,9 @@ h3 {
     height: auto;
     max-width: 100%;
     display: block; 
-  background-size: cover; /* or contain depending on what you want */
-  background-position: center center;
-  background-repeat: no-repeat;
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .homepage-title {
     float: none;
@@ -179,22 +183,41 @@ h3 {
 .hp-tool-links h3{
     color: #24abe2;
 }
-.tod-info {
-    background-color: rgba(255,255,255,.85);
+.page-title {
+    float: none;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    min-height: 57px;
+    border-bottom: 1px solid #ddd;
+    background-color: #efefef;
+    background-image: url(images/p5.png);
+}
+.ipd-info {
     color: black;
-    font-size: 12px;
-    height: 510px;
+    font-size: 14px;
     overflow-y: auto;
+}
+.title-vi-info{
+background-color: rgba(88,34,103.65);
+color: white;
+font-size: 14px;
+overflow-y: auto;
+border-left: 2px solid #fff;
+padding: 10px 25px 5px;
+margin: 0px;
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
 }
 .ipd-method {
-    background-color: rgba(88,34,103.85);
-    color: white;
-    font-size: 14px;
-    overflow-y: auto;
+ background-color: rgba(88,34,103.65);
+color: white;
+font-size: 14px;
+overflow-y: auto;
+border-left: 2px solid #fff;
+padding: 10px 25px 5px;
+margin: 0px;
 }
 .hp-tool-links {
     background-color: #FFF;
@@ -260,7 +283,4 @@ h3 {
 .panel-acorn {
     border: none;
     background: none;
-}
-#disclaimer {
-    margin-top: 15px;
 }
