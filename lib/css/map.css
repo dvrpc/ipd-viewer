@@ -15,20 +15,26 @@ font-style: italic;
 color: #b0b0b0;
 margin: 0px 10px 0px 10px;
 }
+.odometer {
+  display:none;
+  font-size: 45px;
+}
 #Map-layers{
   display:none;
-  margin-left: 5px;
+  margin-left: 0px;
   padding-left: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 10px 5px #b7b7b7;
+  -moz-box-shadow: 0 10px 5px #b7b7b7;
+  box-shadow: 0 10px 5px #b7b7b7;
 }
 #MapButtons, #MapButtons-title {
   display:none;
   margin-left: 5px;
   padding-left: 15px;
-  margin-bottom: 5px;
 }
 #MapButtons{
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 #mapcard{
   background-color: rgb(16,44,71);
@@ -47,6 +53,10 @@ margin: 0px 10px 0px 10px;
 #mapdata-main, #mapdata2-main {
   overflow: hidden;
   width:100%;
+}
+#mapchart-btn {
+  border-radius: 3px;
+  margin-left: 5px;
 }
 .data-info {
 color: black;
@@ -74,32 +84,20 @@ color: rgb(102, 102, 102);
   font-weight: bold;
 }
 #cardbikepanel{
-  border-color: #046f9e;
+ /* border-color: #046f9e; */
   background-color:#EFEFEF;
   display:none; 
   margin-left: 5px;
   height:300px;
+  border:0px;
+  -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.0);
 }
 #cardbike{
   background-color:#EFEFEF;
   border-color: #046f9e;
   padding-bottom: 15px;
-  border-bottom: 0px transparent;
-  margin-bottom: 0px;
-  color: #808080;
-}
-#cardpedpanel{
-  border-color: #046f9e;
-  background-color:#EFEFEF;
-  display:none; 
-  margin-left: 5px;
-}
-#cardped{
-  background-color:#EFEFEF;
-  border-color: #046f9e;
-  padding-bottom: 15px;
-  border-bottom: 0px transparent;
-  margin-bottom: 0px;
+ /* border-bottom: 0px transparent;
+  margin-bottom: 0px; */
   color: #808080;
 }
 .cat-desc {

@@ -14,6 +14,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel="stylesheet" type="text/css">
 
+         <!-- Odometr includes -->
+        <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
+        <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+
         <link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="lib/core/core.css">
         <link rel="stylesheet" href="lib/css/map.css" />
@@ -257,67 +261,72 @@
              </div>
 
              <div id="Map-layers">
-                <div class="col-sm-4" style="background-color:green">
-                    <div class="btn-group tradeBtn" style="margin-left:-15px">
-                     <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle  btn-sm">Population Groups<span class="caret"></span></button>
+               <!--  <div class="col-sm-3"> -->
+                    <div style="float:left">Change Population Group:</div>
+                    <div class="btn-group tradeBtn" style="margin-left:15px">
+                     <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle  btn-sm">Indicators of Potential Disadvantage (IPD)  <span class="caret"></span></button>
                         <ul class="dropdown-menu" >
                             <li>
                               <a href="#" data-value="NewScoreMe" >
-                                <img class="img-legend" src="lib/images/7.png" > Indicators of Potential Disadvantage (IPD)</a>
+                                <img class="img-legend" src="lib/images/7.png" > Indicators of Potential Disadvantage (IPD) </a>
                             </li>
                             <li>
                               <a href="#" data-value="AgeYouth_7">
-                                <img class="img-legend" src="lib/images/7.png"> Youth</a>
+                                <img class="img-legend" src="lib/images/7.png"> Youth </a>
                             </li>
                                  <li>
                               <a href="#" data-value="AgeOlder_7" >
-                                <img class="img-legend" src="lib/images/3.png" > Older Adults</a>
+                                <img class="img-legend" src="lib/images/3.png" > Older Adults </a>
                             </li>
                              <li>
                               <a href="#" data-value="SexFem_S_1">
-                                <img class="img-legend" src="lib/images/4.png"> Female</a>
+                                <img class="img-legend" src="lib/images/4.png"> Female </a>
                             </li>
                              <li>
                               <a href="#" data-value="RaceMin_11" >
-                                <img class="img-legend" src="lib/images/9.png" > Racial Minority</a>
+                                <img class="img-legend" src="lib/images/9.png" > Racial Minority </a>
                             </li>
                             <li>
                               <a href="#" data-value="EthnMin_11" >
-                                <img class="img-legend" src="lib/images/9.png"> Ethnic Minority</a>
+                                <img class="img-legend" src="lib/images/9.png"> Ethnic Minority </a>
                             </li>
                             <li>
                               <a href="#" data-value="FornBorn_7" >
-                                <img class="img-legend" src="lib/images/7.png" > Foreign Born</a>
+                                <img class="img-legend" src="lib/images/7.png" > Foreign Born </a>
                             </li>
                             <li>
                               <a href="#" data-value="LEP_StdB_1" >
-                                <img class="img-legend" src="lib/images/1.png" > Limited English Proficiency (LEP)</a>
+                                <img class="img-legend" src="lib/images/1.png" > Limited English Proficiency (LEP) </a>
                             </li>
                             <li>
                               <a href="#" data-value="Disabled_7" >
-                                <img class="img-legend" src="lib/images/5.png" > Disabled</a>
+                                <img class="img-legend" src="lib/images/5.png" > Disabled </a>
                             </li>
                             <li>
                               <a href="#" data-value="LowInc_S_1" >
-                                <img class="img-legend" src="lib/images/6.png" > Low Income</a>
+                                <img class="img-legend" src="lib/images/6.png" > Low Income </a>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-sm-8" style="background-color:red">
-                    some charts go here
-                </div>    
+              <!--  </div> -->
+             <!--    <div class="col-sm-9"> -->
+                    <div id="container_ipd" style="height: 100px; min-width:300px"></div>
+                    <div id="container_ipdg" style="height: 210px; min-width:300px; display:none"></div>
+            <!--    </div>   -->
 
             </div> 
 
-            <div class="panel panel-primary" id="mapcard"></div>
-
+            <div class="row">
+            <div class="col-sm-10">
             <div id="stationinfo_all" class="stationinfo_all"></div> 
-            
-         
-            
+            </div>
+            <div class="col-sm-2">
+            <div id="odometer" class="odometer" style="display:none"></div> 
+            </div>
+            </div>
+        
             <div id="MapButtons" class="btn-group" data-toggle="buttons">
-                <div style="float:left">Select a scoring method:</div>
+                <div style="float:left">Change scoring method:</div>
                 <label class="btn btn-primary btn-sm active" id="mapchart-btn">
                 <input type="radio" checked><i class="glyphicon glyphicon-align-left"></i><a id="home-tab" href="#mapchart-main"role="tab" style="color:#fff !important">&nbsp;&nbsp;Category Scoring</a>
                 </label>
