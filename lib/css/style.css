@@ -48,6 +48,9 @@ body, .landing, #sidebar {
     background-color: #DDD;
     border-color:#DDD;
 }
+.navbar-nav.navbar-right:last-child{
+margin-right: 5px;
+}
 .footer_btn, #infoheader, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus, .navbar-nav>li>a, .navbar-nav>li>.dropdown  {
   background-color: #E9E9E9;  
 }
