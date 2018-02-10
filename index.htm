@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
         <script src="http://github.hubspot.com/odometer/odometer.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js"></script>
+
         <link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="lib/core/core.css">
         <link rel="stylesheet" href="lib/css/map.css" />
@@ -150,7 +152,7 @@
                 <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#home" class="landingLink" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
                 <li><a href="#disclaimer" class="landingLink" data-tab="disclaimer" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
-                <li><a href="#page2" class="landingLink" data-tab="data" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;Methodoloy</a></li>
+                <li><a href="#page2" class="landingLink" data-tab="page2" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;Methodoloy</a></li>
                 <li id="maplink" class="landingUI"><a href="#map" data-tab="map" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;View Map</a></li>
             </ul>
            
@@ -218,8 +220,9 @@
                 </div> 
         <!-- end homepage -->      
         </div>
-                 <!-- data disclaimer -->
-                <section id ='disclaimer' class='tab-pane landing-content'>
+
+        <!-- data disclaimer -->
+            <section id ='disclaimer' class='tab-pane landing-content'>
                     <div class='page-title center-block col-lg-12'>
                         <div class='center-block col-lg-10 col-sm-12' style='float:none;'>
                             <h1>Data Disclaimer</h1>
@@ -247,8 +250,39 @@
                         </div>
                
                     <div class='clearfix'></div>
+                </section>  
+
+
+        <!-- data disclaimer -->
+            <section id ='page2' class='tab-pane landing-content'>
+                    <div class='page-title center-block col-lg-12'>
+                        <div class='center-block col-lg-10 col-sm-12' style='float:none;'>
+                            <h1>Methodology</h1>
+                        </div>
+                    </div>
+                    <div class='center-block col-lg-10 col-sm-12' style='float:none;'>
+                        <div class="col-xs-12 col-sm-6">
+                            <p>This web page is a public resource using ACS data. The Delaware Valley Regional Planning Commission (DVRPC) makes no warranty, representation, or guarantee as to the content, sequence, accuracy, timeliness, or completeness of any of the spatial data or database information provided herein. DVRPC and partner state, local, and other agencies shall assume no liability for errors, omissions, or inaccuracies in the information provided regardless of how caused; or any decision made or action taken or not taken by any person relying on any information or data furnished within.</p>
+
+                            <p>The Delaware Valley Regional Planning Commission (DVRPC ) fully complies with Title VI of the Civil Rights Act of 1964, the Civil Rights Restoration Act of 1987, Executive Order 12898 on Environmental Justice, and related nondiscrimination statutes and regulations in all programs and activities. DVRPC's website, www.dvrpc.org, can be translated into multiple languages. Publications and other public documents can be made available in alternative languages and formats, if requested. DVRPC public meetings are always held in ADA-accessible facilities and in transit-accessible locations when possible. Auxiliary services can be provided to individuals who submit a request at least seven days prior to a meeting. Requests made within seven days will be accommodated to the greatest extent possible. Any person who believes they have been aggrieved by an unlawful discriminatory practice by DVRPC under Title VI has a right to file a formal complaint. Any such complaint may be in writing and filed with DVRPC's Title VI Compliance Manager and/or the appropriate state or federal agency within 180 days of the alleged discriminatory occurrence. For more information on DVRPC's Title VI program, or to obtain a Title VI Complaint Form, please call (215) 592-1800 or email public_affairs@dvrpc.org.</p>
+                            
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="well well-sm">
+                                <h4>Disclaimer</h4>
+                                <p>
+                               Please Read me!
+                                </p>
+                        </div>
+                            </div>
+                        </div>
+               
+                    <div class='clearfix'></div>
                 </section>   
+<!-- Page 2 -->                 
         </div>
+
+
         
     <!--Map and Sidebar-->
        <div class="row ocontent mapUI" id="container">
@@ -710,7 +744,7 @@
 
         <script type="text/javascript" src="lib/assets/numeral.min.js"></script> 
         <script type="text/javascript" src="lib/assets/leaflet-providers.js"></script>        
-        <script type="text/javascript" src="lib/assets/leaflet.label.js"></script>    
+        <script type="text/javascript" src="lib/assets/leaflet.label.js"></script>     
 
         <script type="text/javascript" src="lib/map.js"></script><!--customized mapping functions to load data -->
         <script type="text/javascript" src="lib/core/core.js"></script><!--core application functions -->

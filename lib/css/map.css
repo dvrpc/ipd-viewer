@@ -67,7 +67,7 @@ color: rgb(102, 102, 102);
 .data-info2 {
 color: black;
 margin: 15px 0px 15px 15px;
-font-size: 12px;
+font-size: 14px;
 color: rgb(102, 102, 102);
 }
 #stationinfo_all{
@@ -282,47 +282,6 @@ a.detaileddata{
   float:right; 
   display:inline-block;
 }
-
-.tooltipinfo {display:none}
-
-.tooltipinfo {left:30px}
-
-.tooltipinfo {padding-left:30px}
-
-.tooltipinfo-trigger:hover .tooltipinfo {opacity:.85;visibility:visible}
-
-.tooltipinfo:after {content:'';position:absolute;top:50%;left:100%;margin-top:-8px;width:0;height:0;border-left:8px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent}
-
-.tooltipinfo {position:absolute;left:-15px;top:15px;max-width:300px;color:#092738;background:#fff;padding:15px;z-index:200;opacity:0;visibility:hidden;font-size:0.9em;font-weight:normal;-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);box-shadow:0 0 20px rgba(0,0,0,0.2);-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-moz-border-radius:5px;-webkit-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-transform:translate(-100%,-50%);-moz-transform:translate(-100%,-50%);-ms-transform:translate(-100%,-50%);transform:translate(-100%,-50%);-webkit-transform:translate(-100%,-50%);-moz-transform:translate(-100%,-50%);-o-transform:translate(-100%,-50%);-ms-transform:translate(-100%,-50%)}
-
-.tooltipinfo.large {max-width:400px}
-
-.tooltipinfo {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltipcp .tooltiptextcp {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
- 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltipcp:hover .tooltiptextcp {
-    visibility: visible;
-}
-
 .legicon {
     width: 35px;
     height: 31px;
@@ -342,3 +301,87 @@ a.detaileddata{
     height: 30px;
     width: 30px;
 }
+
+.tooltip_info {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    font-weight: bold;
+}
+
+.tooltip_info .tooltip_info_text {
+    visibility: hidden;
+    width: 410px;
+    background-color: #434343;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top:-15px;
+    left: 115%;
+    opacity: 0.7;
+}
+
+.tooltip_info .tooltip_info_text::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #434343 transparent transparent;
+}
+
+.tooltip_info:hover .tooltip_info_text {
+    visibility: visible;
+    opacity: .75;
+}
+.tooltip_info {
+    z-index: 3000;
+}
+.tooltip_info-inner {
+    background-color: #fc0c44;
+    color: #434343;
+}
+.tooltip_info.top .tooltip_info-arrow {
+    border-top-color: #fc0c44;
+}
+
+.tooltip_info.left .tooltip_info-arrow {
+    border-left-color: #fc0c44;
+}
+
+.tooltip_info.bottom .tooltip_info-arrow {
+    border-bottom-color: #fc0c44;
+}
+
+.tooltip_info.right .tooltip_info-arrow {
+    border-right-color: #fc0c44;
+}
+
+
+/* legacy tooltip info
+
+.tooltipinfo {display:none}
+
+.tooltipinfo {left:30px}
+
+.tooltipinfo {padding-left:30px}
+
+.tooltipinfo-trigger:hover .tooltipinfo {opacity:.85;visibility:visible}
+
+.tooltipinfo:after {content:'';position:absolute;top:50%;left:100%;margin-top:-8px;width:0;height:0;border-left:8px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent}
+
+.tooltipinfo {position:absolute;left:-15px;top:15px;max-width:300px;color:#092738;background:#fff;padding:15px;z-index:200;opacity:0;visibility:hidden;font-size:0.9em;font-weight:normal;-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);box-shadow:0 0 20px rgba(0,0,0,0.2);-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-moz-border-radius:5px;-webkit-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-transform:translate(-100%,-50%);-moz-transform:translate(-100%,-50%);-ms-transform:translate(-100%,-50%);transform:translate(-100%,-50%);-webkit-transform:translate(-100%,-50%);-moz-transform:translate(-100%,-50%);-o-transform:translate(-100%,-50%);-ms-transform:translate(-100%,-50%)}
+
+.tooltipinfo.large {max-width:400px}
+
+.tooltipinfo {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+}
+*/
