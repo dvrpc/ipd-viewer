@@ -252,7 +252,6 @@
                     <div class='clearfix'></div>
                 </section>  
 
-
         <!-- data disclaimer -->
             <section id ='page2' class='tab-pane landing-content'>
                     <div class='page-title center-block col-lg-12'>
@@ -262,27 +261,33 @@
                     </div>
                     <div class='center-block col-lg-10 col-sm-12' style='float:none;'>
                         <div class="col-xs-12 col-sm-6">
-                            <p>This web page is a public resource using ACS data. The Delaware Valley Regional Planning Commission (DVRPC) makes no warranty, representation, or guarantee as to the content, sequence, accuracy, timeliness, or completeness of any of the spatial data or database information provided herein. DVRPC and partner state, local, and other agencies shall assume no liability for errors, omissions, or inaccuracies in the information provided regardless of how caused; or any decision made or action taken or not taken by any person relying on any information or data furnished within.</p>
+                            <p>The IPD analysis methodology generates an “IPD score”, which is used to meet the nondiscrimination requirements and recommendations of Title VI and EJ for DVRPC’s plans, programs, and decision-making processes.<br><br>
 
-                            <p>The Delaware Valley Regional Planning Commission (DVRPC ) fully complies with Title VI of the Civil Rights Act of 1964, the Civil Rights Restoration Act of 1987, Executive Order 12898 on Environmental Justice, and related nondiscrimination statutes and regulations in all programs and activities. DVRPC's website, www.dvrpc.org, can be translated into multiple languages. Publications and other public documents can be made available in alternative languages and formats, if requested. DVRPC public meetings are always held in ADA-accessible facilities and in transit-accessible locations when possible. Auxiliary services can be provided to individuals who submit a request at least seven days prior to a meeting. Requests made within seven days will be accommodated to the greatest extent possible. Any person who believes they have been aggrieved by an unlawful discriminatory practice by DVRPC under Title VI has a right to file a formal complaint. Any such complaint may be in writing and filed with DVRPC's Title VI Compliance Manager and/or the appropriate state or federal agency within 180 days of the alleged discriminatory occurrence. For more information on DVRPC's Title VI program, or to obtain a Title VI Complaint Form, please call (215) 592-1800 or email public_affairs@dvrpc.org.</p>
+                            The score calculation is determined by standard deviations relative to an indicator’s regional average. This score classifies the concentration of the populations of interest under Title VI and EJ present in every census tract in the region. These population groups are represented in the nine indicators in the IPD analysis.<br><br> 
+
+                            The standard deviations for each of the indicators in the IPD analysis are split five bins: well below average (score of 0); below average (score of 1); average (score of 2); above average (score of 3); and well above average (score of 4). See Figure 1. A summary score of all nine indicators for each Census tract (ranging from 0-36) is used to show regional concentrations of populations of interest under Title VI and EJ. 
+                            </p>
                             
                         </div>
                         <div class="col-xs-12 col-sm-6">
-                            <div class="well well-sm">
+                       <!-- <div class="well well-sm">
                                 <h4>Disclaimer</h4>
                                 <p>
                                Please Read me!
                                 </p>
-                        </div>
+                        </div> -->
+                        <h3>Figure 1: Example Standard Deviations and Corresponding Scores</h3> 
+                            <img src="lib/images/histogram_method.png" style="margin:0px 10px 0px 3px;width:450px;" id="dvrpc-logo"/>
+                            <p>Bin C for each indicator contains census tracts at or near (within a half standard deviation from) the regional average (mean) for that indicator. Bins A, B, D, and E are then built out from the regional average; B and D go another full standard deviation out from the C bin, and A and E bins contain any remaining tracts further out from B or D, respectively. In cases where the regional average is so low that the B bin would contain Census tracts with 0% of an indicator’s designated population, the tract with estimates of zero are manually assigned to the A bin, instead of B.<br><br>
+
+                            The design of this methodology is supported by both FHWA’s and FTA’s Title VI recommendations to simply identify the protected classes using demographic data from the US Census Bureau as the first step in conducting equity analyses. Additionally, FTA’s EJ guidance cautions recipients of federal funds to not be too reliant on population thresholds to determine the impact of a program, plan, or policy to a population group, but rather design a meaningful measure to identify the presence of all protected and considered population groups and then calculate the possibility of discrimination or disproportionately high and adverse effect on these populations. 
+                            </p>
                             </div>
                         </div>
-               
                     <div class='clearfix'></div>
                 </section>   
 <!-- Page 2 -->                 
         </div>
-
-
         
     <!--Map and Sidebar-->
        <div class="row ocontent mapUI" id="container">
@@ -296,7 +301,8 @@
 
              <div id="Map-layers">
                <!--  <div class="col-sm-3"> -->
-                    <div style="float:left">Change Population Group:</div>
+                    <div><h3>&nbsp;&nbsp;Concentrations of Populations Identified for Equity Analyses</i></h3></div>
+                    <div style="float:left;margin-left:20px">Change Population Group:</div>
                     <div class="btn-group tradeBtn" style="margin-left:15px">
                      <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle  btn-sm">Indicators of Potential Disadvantage (IPD)  <span class="caret"></span></button>
                         <ul class="dropdown-menu" >
@@ -347,7 +353,6 @@
                     <div id="container_ipd" style="height: 100px; min-width:300px"></div>
                     <div id="container_ipdg" style="height: 210px; min-width:300px; display:none"></div>
             <!--    </div>   -->
-
             </div> 
 
             <div class="row">
@@ -362,14 +367,13 @@
             <div id="MapButtons" class="btn-group" data-toggle="buttons">
                 <div style="float:left">Change scoring method:</div>
                 <label class="btn btn-primary btn-sm active" id="mapchart-btn">
-                <input type="radio" checked><i class="glyphicon glyphicon-align-left"></i><a id="home-tab" href="#mapchart-main"role="tab" style="color:#fff !important">&nbsp;&nbsp;Category Scoring</a>
+                <input type="radio" checked><i class="glyphicon glyphicon-align-left"></i><a id="home-tab" href="#mapchart-main"role="tab">&nbsp;&nbsp;Category Scoring</a>
                 </label>
                 <label class="btn btn-primary btn-sm" id="mapdata-btn">
-                <input type="radio"><i class="glyphicon glyphicon-list-alt"></i><a id="payment-tab" href="#mapdata-main" role="tab" style="color:#fff !important">&nbsp;&nbsp;Data Measurement</a>
+                <input type="radio"><i class="glyphicon glyphicon-list-alt"></i><a id="payment-tab" href="#mapdata-main" role="tab">&nbsp;&nbsp;Data Measurement</a>
                 </label>
             </div>
         
-
             <div class="col-sm-11" >
                 <div class="panel panel-primary" id="cardbikepanel">
                 <div class="tab-content" id="MapTabs">
@@ -546,153 +550,7 @@
     </div>
     <!-- /.modal --> 
 <!-- end Category Modal -->
-
-       <!-- start Category Modal -->
-       <div class="modal fade" id="FTODPModal">
-        <div class="modal-dialog modal-lg" style="width: 875px;">
-            <div class="modal-content" style="overflow:hidden">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title modal-legend">Future TOD Potential Category Description</h4>
-                    <p>The five attributes in this category capture a blend of the real estate market conditions and political context that are suggestive of future development opportunities. Areas with stronger market dynamics are more likely to attract developer interest and require less public sector intervention.  Similarly, a supportive local political climate can help facilitate the collaborative planning efforts needed to promote TOD.</p>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xs-4">
-                          <ul id="FTODPTabs" class="nav nav-tabs nav-stacked nav-left">
-                            
-                              <li class="active">
-                                  <a href="#map" data-target="#Development" role="tab" data-toggle="tab">Development Activity</a>
-                              </li>
-                              <li>
-                                  <a href="#map" data-target="#Commercial" role="tab" data-toggle="tab" >Commercial Market</a>
-                              </li>
-                              <li>
-                                  <a href="#map" data-target="#Residential" role="tab" data-toggle="tab">Residential Market</a>
-                              </li>
-                              <li>
-                                  <a href="#map" data-target="#Available" role="tab" data-toggle="tab">Available Land</a>
-                              </li>
-                              <li>
-                                  <a href="#map" data-target="#Planning" role="tab" data-toggle="tab">Planning Context</a>
-                              </li>
-                          </ul>
-                        </div>
-                        <div class="col-xs-7">
-                    <div id="FTODPTabsContent" class="tab-content">
-      
-                    <div class="tab-pane fade active in" id="Development">
-                    <h4 class="modal-title" style="color:black">Development Activity</h4>
-                    <p>This attribute measures the number of residential multifamily units proposed, under construction, or built within a station area over the last ten years according to the CoStar Commercial Real Estate Database. Areas with recent development activity typically reflect stronger market conditions.
-                    <br>            
-                    </p>
-                    <h5 class="modal-title">Scoring</h5>
-                    <p>Higher scores are more supportive of TOD<br>
-                        4 = 381 — 1,658<br>
-                        3 = 138 — 371<br>
-                        2 = 59 — 120<br>
-                        1 = 0 — 53
-                    </p>
-                    </div>
-
-                    <div class="tab-pane fade" id="Commercial">
-                    <h4 class="modal-title" style="color:black">Commercial Market</h4>
-                    <p>Station areas were assessed based on average rent per square foot for office space over the last five years according to the CoStar Commercial Real Estate Database.</p>    
-                    <h5 class="modal-title">Scoring</h5>
-                    <p>Higher scores are more supportive of TOD<br>
-                    4 = $21.99 — $34.83<br>
-                    3 = $18.75 — $21.92<br>
-                    2 = $15.63 — $18.66<br>
-                    1 = $5.73 — $34.83
-                    </p>
-                    </div>
-
-                    <div class="tab-pane fade" id="Residential">
-                    <h4 class="modal-title" style="color:black">Residential Market</h4>
-                    <p>This attribute is based on the current average asking rent per square foot for multifamily units according to the CoStar Commercial Real Estate Database.</p>
-                    <h5 class="modal-title">Scoring</h5>
-                    <p>Higher scores are more supportive of TOD<br>
-                    4 = $1.53 — $2.30<br>
-                    3 = $1.34 — $1.50<br>
-                    2 = $1.17 — $1.30<br>
-                    1 = $0.70 — $1.15
-
-                    </p>
-                     </div>
-
-                    <div class="tab-pane fade" id="Available">
-                    <h4 class="modal-title" style="color:black">Available Land</h4>
-                    <p>This measure mixes quantitative and qualitative data to identify the presence of vacant and underutilized land that may provide opportunities for TOD within one-quarter mile of stations.<br><br>
-
-                    Our assessment was based on land identified as vacant according to DVRPC’s 2010 Land Use GIS layer and the Philadelphia Planning Commission’s 2016 Land Use GIS layer. A station area’s rating was influenced by the number, size, and arrangement of vacant parcels as well as their proximity to the station. Although, this assessment was primarily based on the presence of vacant parcels, industrial properties and large areas of surface parking were also factored into this analysis. These lower-intensity land uses may offer future redevelopment opportunities as the demand for mixed-use development grows. 
-                    </p>
-                    </div>
-                                
-                    <div class="tab-pane fade" id="Planning">
-                    <h4 class="modal-title" style="color:black">Planning Context</h4>
-                    <p>This attribute attempts to measure the degree to which TOD and other transit-supportive measures have been identified as an appropriate strategy for a given station area. The rating incorporates transit-supportive municipal and county planning initiatives and regulations as well as recent and planned capital improvements sponsored by a transit provider.<br><br>
-
-                    The station areas that scored the highest in this category combined recent planning efforts, such as a station area redevelopment plan, with TOD-supportive ordinances and planned or recently-completed station facility improvements.
-                    </p>
-                    </div>
-
-                  </div>
-                  </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal --> 
-<!-- end Category Modal -->
-
-  <!-- start Category Modal -->
-        <!-- Legend Modal -->
-         <div class="modal fade" id="SATModal">
-          <div class="modal-dialog" style="width:710px;">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title modal-legend">Station Area Types</h4>
-                      <p>Each station area has been classified as one of seven types in order to help organize the findings of this analysis. These types are based on designations that were originally developed as part of the Smart Transportation Guidebook, jointly developed by NJDOT and PennDOT.</p>
-                  </div>
-                  <div class="modal-body">
-                            <p><b>Urban Center:</b> Downtown areas consisting of blocks of higher density, mixed-use buildings. These urban areas are located in the region’s Core Cities and often include taller buildings and a network of compact blocks.</p>
-                            <p><b>Urban Neighborhood:</b> Dense, primarily residential areas of the region’s Core Cities that are often well-connected to urban centers. Housing is often mixed with local-serving retail.</p> 
-                            <p><b>Town Center:</b> Mixed-use, higher-density areas with buildings that are typically two to four stories tall that include commercial operations on the ground floor and offices or residences above. These districts often have parallel parking and are typically surrounded by denser residential neighborhoods.</p> 
-                            <p><b>Town Neighborhoods:</b> Primarily residential neighborhoods that sometimes include retail, restaurants, and offices. Block sizes are regular and often smaller than those found in conventional suburban neighborhoods. Town Neighborhoods can be found throughout the region’s Developed Communities and in less urban portions of Philadelphia.</p> 
-                            <p><b>Suburban Center: </b> Often a mixed-use, cohesive collection of land uses that may include residential, office, and retail uses. These areas are typically designed to be accessible by cars and are typically less accommodating to pedestrians than Town Centers. The majority of Suburban Centers are located in Developed Communities, but a few are located in Growing Suburbs.</p> 
-                            <p><b>Suburban Neighborhoods:</b> Predominantly low-density residential communities built after World War II. House lots tend to be larger than those in Town Neighborhoods and the street networks are often more curvilinear and less connected to surrounding streets that those in more urbanized areas.</p> 
-                            <p><b>Special Districts: </b> A few stations did not fit into any of the categories described above. These stations have been classified as Special Districts with a specialized context based on its location within a university environment, business park, or stadium district.</p> 
-                  </div><!-- /.modal-body -->
-              </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-      </div><!-- /.modal fade-->
-<!-- end Category Modal -->
-
- <!-- start Category Modal -->
-        <!-- Legend Modal -->
-         <div class="modal fade" id="PACModal">
-          <div class="modal-dialog" style="width:710px;">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title modal-legend">Planning Area Context</h4>
-                      <p>Each station area has been assigned a planning area context  based on descriptions found in Connections 2040, the Long Range Plan for Greater Philadelphia.</p>
-                  </div>
-                  <div class="modal-body">
-                            <p><b>Core Cities:</b> The region’s four core cities are Philadelphia, Trenton, Camden, and Chester.</p>
-                            <p><b>Developed Communities:</b> Places that have already experienced most of their population and employment growth, and include inner ring communities adjacent to the Core Cities; railroad boroughs and trolley car communities; and mature suburban townships.</p> 
-                            <p><b>Growing Suburbs:</b> Communities that have a significant number of developable acres remaining and are experiencing or are forecast to experience significant population and/or employment growth.</p> 
-                            <p><b>Rural Areas:</b> Include the region’s agricultural communities and communities with large remaining natural areas.</p> 
-                  </div><!-- /.modal-body -->
-              </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-      </div><!-- /.modal fade-->
-<!-- end Category Modal -->
-
+   
 <!-- start Category Modal -->
         <!-- Legend Modal -->
          <div class="modal fade" id="rateModal">
@@ -702,17 +560,15 @@
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       <h4 class="modal-title modal-legend">Rating TOD Opportunities</h4>
                   </div>
-                  <div class="modal-body"><p>   
-            <div class="col-xs-12 col-sm-12">
-                  <div class="row" id="legend-row"><i class="fa fa-circle ct-existing fa-3"></i><span class="nav-text">Strong Existing Orientation <i><B>and</B></i> Strong Future Potential</span></div>
-            <div class="row" id="legend-row"><i class="fa fa-circle ct-inprogress"></i><span class="nav-text">Strong Existing Orientation <i><b>or</b></i> Future Potential</span></div>
-            <div class="row" id="legend-row"><i class="fa fa-circle ct-planned"></i><span class="nav-text">Moderate Existing Orientation and Moderate Future Potential</span></div>
-            <div class="row" id="legend-row"><i class="fa fa-circle other"></i><span class="nav-text">Other passenger rail stations</span></div>
-            </div>
-
-          
-          
-</p>
+                  <div class="modal-body">
+                    <p>   
+                        <div class="col-xs-12 col-sm-12">
+                        <div class="row" id="legend-row"><i class="fa fa-circle ct-existing fa-3"></i><span class="nav-text">Strong Existing Orientation <i><B>and</B></i> Strong Future Potential</span></div>
+                        <div class="row" id="legend-row"><i class="fa fa-circle ct-inprogress"></i><span class="nav-text">Strong Existing Orientation <i><b>or</b></i> Future Potential</span></div>
+                        <div class="row" id="legend-row"><i class="fa fa-circle ct-planned"></i><span class="nav-text">Moderate Existing Orientation and Moderate Future Potential</span></div>
+                        <div class="row" id="legend-row"><i class="fa fa-circle other"></i><span class="nav-text">Other passenger rail stations</span></div>
+                        </div>      
+                    </p>
                   </div><!-- /.modal-body -->
               </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->

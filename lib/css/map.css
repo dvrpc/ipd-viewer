@@ -1,19 +1,19 @@
 #mapsidebar {
-    height: 100%;
-    padding: 15px;
-    overflow: auto;
-    background-color: #efefef !important;
-    margin-top: 0px;
+  height: 100%;
+  padding: 15px;
+  overflow: auto;
+  background-color: #efefef !important;
+  margin-top: 0px;
 }
 .barchart{
   height:100%;
   width: 99%;
 }
 #cardclick{
-text-align: center;
-font-style: italic;
-color: #b0b0b0;
-margin: 0px 10px 0px 10px;
+  text-align: center;
+  font-style: italic;
+  color: #b0b0b0;
+  margin: 0px 10px 0px 10px;
 }
 .odometer {
   display:none;
@@ -69,6 +69,9 @@ color: black;
 margin: 15px 0px 15px 15px;
 font-size: 14px;
 color: rgb(102, 102, 102);
+}
+.ipd-chart-info{
+  font-size: 12px;
 }
 #stationinfo_all{
   margin-left: 5px;
@@ -360,6 +363,9 @@ a.detaileddata{
 
 .tooltip_info.right .tooltip_info-arrow {
     border-right-color: #fc0c44;
+}
+sup {
+    top: -.5em;
 }
 
 
