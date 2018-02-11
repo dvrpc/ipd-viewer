@@ -23,6 +23,19 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.1;
     color: #434343;
 }
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 5px 0;
+    color: #333;
+}
+.home-headers {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    color: rgb(88,34,103);
+}
 label {
     font-weight: 400;
 }
@@ -142,13 +155,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     font-weight: bold;
     text-shadow: 0px 1px 0px rgb(255, 255, 255);
 }
-h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 10px;
-    padding: 5px 0;
-    color: #333;
-}
+
 /*--------------------------------------------------------*/
 /*--------  TOD Home Page  Color Styles  ---------------------*/
 /*--------------------------------------------------------*/
@@ -201,21 +208,22 @@ h3 {
     overflow-y: auto;
 }
 .title-vi-info{
-background-color: rgba(88,34,103.65);
-color: white;
+background-color: #fff;
+color: #434343;
 font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
 padding: 10px 25px 5px;
 margin: 0px;
+box-shadow: 0 0 10px #b7b7b7;
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
 }
 .ipd-method {
- background-color: rgba(88,34,103.65);
-color: white;
+background-color: #fff;
+color: #434343;
 font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
@@ -223,11 +231,12 @@ padding: 10px 25px 5px;
 margin: 0px;
 }
 .hp-tool-links {
-    background-color: #FFF;
+    background-color: rgba(88,34,103.65);
     border: 1px solid #B7B7B7;
     text-align: center;
     padding: 10px 20px 20px;
     transition: all .3s ease-in-out;
+    color: #fff;
 }
 .hp-tool-links, .stat-block {
     box-shadow: 0 0 10px #b7b7b7;

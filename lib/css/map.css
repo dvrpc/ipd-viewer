@@ -367,6 +367,10 @@ a.detaileddata{
 sup {
     top: -.5em;
 }
+.searchico{
+width:18px; height:18px;
+margin-right:8px;
+}
 
 
 /* legacy tooltip info
