@@ -19,7 +19,7 @@
         <script src="http://github.hubspot.com/odometer/odometer.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js"></script>
-
+        
         <link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="lib/core/core.css">
         <link rel="stylesheet" href="lib/css/map.css" />
@@ -149,7 +149,13 @@
             </div>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
-                <ul id="landing" class="nav navbar-nav navbar-right">
+                <div id="nav_search" class="navbar-form navbar-right mapUI" style="display:none;">
+                    <div class="input-group search-container">
+                        <input id="searchbox" type="text" class="form-control" placeholder="enter a municipality">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    </div>
+                </div>
+                <ul id="landing" class="nav navbar-nav navbar-left">
                 <li><a href="#home" class="landingLink" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
                 <li><a href="#disclaimer" class="landingLink" data-tab="disclaimer" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
                 <li><a href="#page2" class="landingLink" data-tab="page2" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;Methodoloy</a></li>
@@ -311,17 +317,28 @@
             <div class="row" id="barcharts" style="margin-top:5px"> 
              
              <div id="cardclick">
-                <h3><i>Click on a census tract to view IPD analysis and scoring</i></h3>
-                <h2>Explore IPD by Location</h2>
-                <i>this function not working yet</i>
-                    <form class="">
+                <h4 style="text-align:center"><i>Click on a census tract to view IPD analysis and scoring</i></h4>
+                <h3 style="text-align:center">Explore IPD by location</h3>
+                    <form class="" style="text-align:center">
                         <div class="form-group">
                             <div class="col-lg-12">
-                             <input class="form-control input-lg" id="userQuery" placeholder="Enter a municipality or county" type="text">
+                             <input class="form-control" id="searchbox2" placeholder="enter a municipality or county" type="text">
                             </div>
                         </div>
                     </form>
-             </div>
+                <div style="margin-top:70px">
+                    <h3>Methodology</h3>
+                    <p>The score calculation is determined by standard deviations relative to an indicator’s regional average. This score classifies the concentration of the populations of interest under Title VI and EJ present in every census tract in the region. These population groups are represented in the nine indicators in the IPD analysis.<br><br> 
+
+                    The standard deviations for each of the indicators in the IPD analysis are split five bins: well below average (score of 0); below average (score of 1); average (score of 2); above average (score of 3); and well above average (score of 4). See Figure 1. A summary score of all nine indicators for each Census tract (ranging from 0-36) is used to show regional concentrations of populations of interest under Title VI and EJ.<br><br>
+                    <h3>Figure 1: Example Standard Deviations and Corresponding Scores</h3> 
+                            <img src="lib/images/histogram_method.png" style="margin:0px 10px 0px 3px;width:450px;" id="dvrpc-logo"/>
+                            <p>Bin C for each indicator contains census tracts at or near (within a half standard deviation from) the regional average (mean) for that indicator. Bins A, B, D, and E are then built out from the regional average; B and D go another full standard deviation out from the C bin, and A and E bins contain any remaining tracts further out from B or D, respectively. In cases where the regional average is so low that the B bin would contain Census tracts with 0% of an indicator’s designated population, the tract with estimates of zero are manually assigned to the A bin, instead of B.<br><br>
+
+                            The design of this methodology is supported by both FHWA’s and FTA’s Title VI recommendations to simply identify the protected classes using demographic data from the US Census Bureau as the first step in conducting equity analyses. Additionally, FTA’s EJ guidance cautions recipients of federal funds to not be too reliant on population thresholds to determine the impact of a program, plan, or policy to a population group, but rather design a meaningful measure to identify the presence of all protected and considered population groups and then calculate the possibility of discrimination or disproportionately high and adverse effect on these populations.  
+                    </p> 
+                </div>
+            </div>
 
              <div id="Map-layers">
                <!--  <div class="col-sm-3"> -->
@@ -623,6 +640,7 @@
     
         <script src="http://code.highcharts.com/highcharts.js"></script>
 
+        <script type="text/javascript" src="lib/assets/typeahead.min.js"></script>
         <script type="text/javascript" src="lib/assets/numeral.min.js"></script> 
         <script type="text/javascript" src="lib/assets/leaflet.label.js"></script>  
 

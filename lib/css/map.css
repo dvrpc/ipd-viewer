@@ -10,10 +10,8 @@
   width: 99%;
 }
 #cardclick{
-  text-align: center;
-  font-style: italic;
-  color: #b0b0b0;
-  margin: 0px 10px 0px 10px;
+  color: #434343;
+  margin: 0px 0px 0px 10px;
 }
 .odometer {
   display:none;
