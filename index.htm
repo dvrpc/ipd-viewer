@@ -202,7 +202,7 @@
                                 <li>Foreign Born</li>
                                 <li>Limited English Proficiency</li>
                                 <li>Disabled</li>
-                                <li>Low-income</li>
+                                <li>Low Income</li>
                             </ul>
                         </div>
                         <div class="col-md-5" style="margin-top: 15px;margin-bottom:15px;">
@@ -462,8 +462,8 @@
             <div class="modal-content" style="overflow:hidden">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title modal-legend">Existing TOD Orientation Category Description</h4>
-                    <p>The seven attributes in this category provide an overview of the existing transit, demographic, and physical context of a station area. Together, these attributes help to identify station areas where the land use and travel patterns frequently associated with TOD already exist. </p>
+                    <h4 class="modal-title modal-legend">Concentrations of Populations Identified for Equity Analyses</h4>
+                    <p>The IPD analysis identifies populations of interest under Title VI and EJ using U.S. Census American Community Survey (ACS) 2011-2015 five-year estimates data and maps these populations in each of the Census tracts in the region via GIS. Each population group is an “indicator” in the analysis and information about those "indicators" can be found below:</p>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -471,48 +471,49 @@
                           <ul id="EXTODTabs" class="nav nav-tabs nav-stacked nav-left">
                             
                               <li class="active">
-                                  <a href="#map" data-target="#Transit" role="tab" data-toggle="tab">Transit Service Quality</a>
+                                  <a href="#map" data-target="#Youth" role="tab" data-toggle="tab">Youth</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Job" role="tab" data-toggle="tab" >Job Access</a>
+                                  <a href="#map" data-target="#Older" role="tab" data-toggle="tab" >Older Adults</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Travel" role="tab" data-toggle="tab">Travel Time</a>
+                                  <a href="#map" data-target="#Female" role="tab" data-toggle="tab">Female</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Intensity" role="tab" data-toggle="tab">Intensity</a>
+                                  <a href="#map" data-target="#Racial" role="tab" data-toggle="tab">Racial Minority</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Car" role="tab" data-toggle="tab">Car Ownership</a>
+                                  <a href="#map" data-target="#Ethnic" role="tab" data-toggle="tab">Ethnic Minority</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Non-Car" role="tab" data-toggle="tab">Non-Car Commuters</a>
+                                  <a href="#map" data-target="#Foreign" role="tab" data-toggle="tab">Foreign Born</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Walk" role="tab" data-toggle="tab">Walk Score®</a>
+                                  <a href="#map" data-target="#Limited" role="tab" data-toggle="tab">Limited English Proficiency</a>
+                              </li>
+                               <li>
+                                  <a href="#map" data-target="#Disabled" role="tab" data-toggle="tab">Disabled</a>
+                              </li>
+                              <li>
+                                  <a href="#map" data-target="#Low" role="tab" data-toggle="tab">Low Income</a>
                               </li>
                           </ul>
                         </div>
                         <div class="col-xs-7">
                     <div id="EXTODTabsContent" class="tab-content">
       
-                    <div class="tab-pane fade active in" id="Transit">
-                    <h4 class="modal-title" style="color:black">Transit Service Quality</h4>
-                    <p>The quality of transit service is measured using the Transit Connectivity Index (TCI) developed by the Center for Neighborhood Technology (CNT). A TCI score reflects the number of transit trips that are accessible by walking in a specific location. This measure examines the frequency and proximity of all transit routes and so this score also reflects nearby bus service.
-                    <br>            
-                    </p>
-                    <h5 class="modal-title">Scoring</h5>
-                    <p >Higher scores are more supportive of TOD<br>
-                    4 = 39—57<br>
-                    3 = 26—38<br>
-                    2 = 20—25<br>
-                    1 = 11—19<br>
+                    <div class="tab-pane fade active in" id="Youth">
+                    <h4 class="modal-title" style="color:black">Youth</h4>
+                    <p>The Youth indicator addresses<a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank"> FHWA’s EJ recommendation </a>to include children as a “traditionally underserved” population group when conducting equity analyses and<a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank"> FHWA’s Additional Nondiscrimination Requirement </a>under the Age Discrimination Act of 1975 to not discriminate based on age.<br><br>
+
+                    This indicator uses age data from the ACS and includes all persons in the region under 18 years old. The data for this indicator can be downloaded in the NAME HERE tab.
+
                     </p>
                     </div>
 
-                    <div class="tab-pane fade" id="Job">
-                    <h4 class="modal-title" style="color:black">Job Access</h4>
-                    <p>The number of jobs accessible by transit directly influences how desirable a station area is to potential residents and businesses. This attribute identifies the number of jobs accessible via a 30-minute transit ride from a given station. This data was aggregated by CNT as part of their Housing and Transportation (H+T) Affordability Index.
+                    <div class="tab-pane fade" id="Older">
+                    <h4 class="modal-title" style="color:black">Older Adults</h4>
+                    <p>Older Adults
                     </p>    
                     <h5 class="modal-title">Scoring</h5>
                     <p>Higher scores are more supportive of TOD<br>
@@ -523,9 +524,9 @@
                     </p>
                     </div>
 
-                    <div class="tab-pane fade" id="Travel">
-                    <h4 class="modal-title" style="color:black">Travel Time</h4>
-                    <p>Transit service is most attractive when travel times are competitive with driving times. This attribute is based on a ratio of transit to automobile travel time from a station area to Suburban Station in Center City Philadelphia, a central location within the region’s largest employment center. This ratio was derived using travel times from Google Maps based on a 9:00 AM arrival on a Tuesday morning. For transit trips, transfer and walking times are included. Travel time ratios of 1.0 or more reflect trips that are quicker by transit during this time period.</p>
+                    <div class="tab-pane fade" id="Female">
+                    <h4 class="modal-title" style="color:black">Female</h4>
+                    <p>Female</p>
                     <h5 class="modal-title">Scoring</h5>
                     <p>Higher scores are more supportive of TOD<br>
                     4 = 1.0 and greater<br>
@@ -535,9 +536,9 @@
                     </p>
                      </div>
 
-                    <div class="tab-pane fade" id="Intensity">
-                    <h4 class="modal-title" style="color:black">Intensity</h4>
-                    <p>Higher residential and employment densities generally support greater transit ridership and encourage greater retail offerings. This factor represents the total number of residents and employees located within one-half mile of a station. This attribute combines population figures aggregated by the Center for Transit-Oriented Development’s (CTOD) TOD Database and employment figures from the National Establishment Time-Series (NETS) employment database. </p>
+                    <div class="tab-pane fade" id="Racial">
+                    <h4 class="modal-title" style="color:black">Racial Minority</h4>
+                    <p>Racial </p>
                     <h5 class="modal-title">Scoring</h5>
                     <p>Higher scores are more supportive of TOD<br>
                     4 = 16,296 - 39,025<br>
@@ -547,9 +548,9 @@
                     </p>
                     </div>
                                 
-                    <div class="tab-pane fade" id="Car">
-                    <h4 class="modal-title" style="color:black">Car Ownership</h4>
-                    <p>This attribute reflects the percent of occupied housing units within a station area with zero or one vehicle. These households may represent existing or potential transit users. This data was gathered in CTOD’s TOD Database and is based on data from the U.S. Census Bureau’s American Community Survey.</p>
+                    <div class="tab-pane fade" id="Ethnic">
+                    <h4 class="modal-title" style="color:black">Ethnic</h4>
+                    <p>Ethnic</p>
                     <h5 class="modal-title">Scoring</h5>
                     <p>Higher scores are more supportive of TOD<br>
                     4 = 79.22% — 93.55%<br>
@@ -558,9 +559,9 @@
                     1 = 24.46% — 48.01%
                     </div>
 
-                    <div class="tab-pane fade" id="Non-Car">
-                    <h4 class="modal-title" style="color:black">Non-Car Commuters</h4>
-                    <p>This attribute captures the percent of station area residents who commute to work by public transportation, bicycle, or walking. Station areas with higher proportions of non-car commuters likely contain some of the physical attributes that support successful TOD. This data was gathered in CTOD’s TOD Database and is based on data from the U.S. Census Bureau’s American Community Survey.</p>
+                    <div class="tab-pane fade" id="Foreign">
+                    <h4 class="modal-title" style="color:black">Foreign</h4>
+                    <p>Foreign</p>
                     <h5 class="modal-title">Scoring</h5>
                     <p>Higher scores are more supportive of TOD<br>
                     4 = 38.31% — 64.21%<br>
@@ -569,9 +570,31 @@
                     1 = 4.06% — 13.39%
                     </div>
 
-                    <div class="tab-pane fade" id="Walk">
-                    <h4 class="modal-title" style="color:black">Walk Score®</h4>
+                    <div class="tab-pane fade" id="Limited">
+                    <h4 class="modal-title" style="color:black">Limited English Proficiency</h4>
+                    <p>LEP</p>
+                    <h5 class="modal-title">Scoring</h5>
+                    <p>Higher scores are more supportive of TOD<br>
+                    4 = 90 and above<br>
+                    3 = 70 - 89<br>
+                    2 = 50 - 69<br>
+                    1 = 49 and below   
+                    </div>
+                      
+                    <div class="tab-pane fade" id="Disabled">
+                    <h4 class="modal-title" style="color:black">Disabled</h4>
                     <p>A station area’s Walk Score™ reflects the number of commercial amenities that can be reached on foot. This 100-point scale can also be used to help identify station areas with the physical characteristics that enable walking.</p>
+                    <h5 class="modal-title">Scoring</h5>
+                    <p>Higher scores are more supportive of TOD<br>
+                    4 = 90 and above<br>
+                    3 = 70 - 89<br>
+                    2 = 50 - 69<br>
+                    1 = 49 and below   
+                    </div>
+
+                    <div class="tab-pane fade" id="Low">
+                    <h4 class="modal-title" style="color:black">Low Income</h4>
+                    <p>Low-income</p>
                     <h5 class="modal-title">Scoring</h5>
                     <p>Higher scores are more supportive of TOD<br>
                     4 = 90 and above<br>
