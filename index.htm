@@ -347,7 +347,7 @@
             </div>
 
              <div id="Map-layers">
-               <!--  <div class="col-sm-3"> -->
+               <!--  IPD Top Section -->
                     <div><h3>&nbsp;&nbsp;Concentrations of Populations Identified for Equity Analyses</i></h3></div>
                     <div style="float:left;margin-left:20px">Change Population Group:</div>
                     <div class="btn-group tradeBtn" style="margin-left:15px">
@@ -395,50 +395,37 @@
                             </li>
                         </ul>
                     </div>
-              <!--  </div> -->
-             <!--    <div class="col-sm-9"> -->
+              <!--  Charts -->
                     <div id="container_ipd" style="height: 100px; min-width:280px"></div>
                     <div id="container_ipdg" style="height: 210px; min-width:280px; display:none"></div>
-            <!--    </div>   -->
             </div> 
 
-            <div class="row">
-            <div class="col-sm-10">
-            <div id="stationinfo_all" class="stationinfo_all"></div> 
-            </div>
-            <div class="col-sm-2">
-            <div id="odometer" class="odometer" style="display:none"></div> 
-            </div>
-            </div>
-        
-            <div id="MapButtons" class="btn-group" data-toggle="buttons">
-                <div style="float:left">Change scoring method:</div>
-                <label class="btn btn-primary btn-sm active" id="mapchart-btn">
-                <input type="radio" checked><i class="glyphicon glyphicon-align-left"></i><a id="home-tab" href="#mapchart-main"role="tab">&nbsp;&nbsp;Category Scoring</a>
-                </label>
-                <label class="btn btn-primary btn-sm" id="mapdata-btn">
-                <input type="radio"><i class="glyphicon glyphicon-list-alt"></i><a id="payment-tab" href="#mapdata-main" role="tab">&nbsp;&nbsp;Data Measurement</a>
-                </label>
-            </div>
-        
-            <div class="col-sm-11" >
-                <div class="panel panel-primary" id="cardbikepanel">
-                <div class="tab-content" id="MapTabs">
-                    <div id="mapchart-main" class="tab-pane fade in active">
-                    <div id="existingOV-data" class="data-info"></div> 
-                    <div id="existing" class="barchart"></div>
-                    </div>
-
-                    <div id="mapdata-main" class="tab-pane fade">  
-                    <div id="existing-data" class="data-info2"></div> 
-                    </div>
+            <!--  Indicators Section -->
+       
+            <div id="location_info" class="location_info"></div> 
+            <div id="tractuniverse-data" class="universe-callout"></div> 
+        <!-- Tabbbed Content Data and Bar Chart-->
+            <div class="row" >
+                <div class="panel panel-primary" id="tractinfo_panel">
+                    <div id="tract-data" class="data-info2"></div> 
+                     
+                     <div class="row">
+                     <div class="col-md-9" >
+                    <div id="existingOV-data" class="data-info"><b>IPD Scoring by Census Tract</b></div> 
+                    <div id="ipd-barchart" class="barchart"></div>
                 </div>
+                <div class="col-md-2" id="odometer-panel">
+                <div id="odometer-title">IPD Score</div>    
+                <div id="odometer" class="odometer" style="margin-left:10px"></div> 
+                </div>
+                <div class="col-md-1" ></div>
+            </div>
+
                 </div>
             </div>
 
           </div>
   
-
             </div><!--Siderbar Close-->
             <!---Map Pane -->
             <div class="col-sm-7 col-lg-7 mapUI" id="mapDIV" style="display:none;">

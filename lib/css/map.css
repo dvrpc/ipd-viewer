@@ -1,3 +1,7 @@
+.nav-text {
+    vertical-align:middle;
+    line-height: 2.4;
+}
 #mapsidebar {
   height: 100%;
   padding: 15px;
@@ -13,18 +17,15 @@
   color: #434343;
   margin: 0px 0px 0px 10px;
 }
-.odometer {
-  display:none;
-  font-size: 45px;
-}
 #Map-layers{
   display:none;
   margin-left: 0px;
   padding-left: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   -webkit-box-shadow: 0 10px 5px #b7b7b7;
   -moz-box-shadow: 0 10px 5px #b7b7b7;
-  box-shadow: 0 10px 5px #b7b7b7;
+/*  box-shadow: 0 10px 5px #b7b7b7; */
+  box-shadow: 0 4px 0 rgba(0,0,0,.1);
 }
 #MapButtons, #MapButtons-title {
   display:none;
@@ -56,6 +57,51 @@
   border-radius: 3px;
   margin-left: 5px;
 }
+#location_info{
+  margin-left: 5px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+#odometer-panel{
+border-radius: .3rem;
+background-color: #313644;
+}
+#odometer-title{
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+}
+.odometer {
+  display:none;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+#tractinfo_panel{
+  background-color:#EFEFEF;
+  display:none; 
+  margin: 0px 15px 10px 20px;
+  height:300px;
+  border:0px;
+  -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.0);
+}
+.universe-callout {
+  margin: 0px 10px 10px 10px;
+  padding: .625rem;
+  border-radius: .3rem;
+  border: 1px solid #cacaca;
+  background-color: #fff;
+  color: #1a2a2a;
+  display:none;
+}
+.location-list {
+    color: #fefefe;
+   /* background-color: #434343; */
+    background-color: #313644;
+    margin: 0px 0px 10px -20px;
+    padding: 1rem 1.25rem .5rem;
+}
 .data-info {
 color: black;
 margin: 5px 0px 5px 15px;
@@ -67,39 +113,30 @@ color: black;
 margin: 15px 0px 15px 15px;
 font-size: 14px;
 color: rgb(102, 102, 102);
+box-shadow: 0 4px 0 rgba(0,0,0,.1);
+}
+#ipd-barchart{
+  width:400px;
+}
+.ipd-stat{
+  font-size: 24px;
+}
+.ipd-stat-footer{
+  font-size: 80%;
+}
+#indicator-callout {
+  position: relative;
+  margin: 0 0 1rem;
+  margin-bottom: 1rem;
+  padding: .625rem;
+  border-radius: .3rem;
+  border: 1px solid #cacaca;
+  background-color: #fff;
+  color: #1a2a2a;
+  text-align: center;
 }
 .ipd-chart-info{
   font-size: 12px;
-}
-#stationinfo_all{
-  margin-left: 5px;
-  padding-left: 15px;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-#card-title {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 20px;
-  font-weight: bold;
-}
-#cardbikepanel{
- /* border-color: #046f9e; */
-  background-color:#EFEFEF;
-  display:none; 
-  margin-left: 5px;
-  height:300px;
-  border:0px;
-  -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.0);
-}
-#cardbike{
-  background-color:#EFEFEF;
-  border-color: #046f9e;
-  padding-bottom: 15px;
- /* border-bottom: 0px transparent;
-  margin-bottom: 0px; */
-  color: #808080;
 }
 .cat-desc {
 }
@@ -163,10 +200,6 @@ color: rgb(102, 102, 102);
 #legend-row {
   height:25px;
 
-}
-.nav-text {
-    vertical-align:middle;
-    line-height: 2.4;
 }
 .ipd-e{
   color: #253494;
@@ -306,7 +339,7 @@ a.detaileddata{
 .tooltip_info {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+  /*  border-bottom: 1px dotted black; */
     font-weight: bold;
 }
 
@@ -319,7 +352,7 @@ a.detaileddata{
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     top:-15px;
     left: 115%;
     opacity: 0.7;
@@ -340,9 +373,9 @@ a.detaileddata{
     visibility: visible;
     opacity: .75;
 }
-.tooltip_info {
+/* .tooltip_info {
     z-index: 3000;
-}
+} */
 .tooltip_info-inner {
     background-color: #fc0c44;
     color: #434343;
