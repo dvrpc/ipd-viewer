@@ -121,6 +121,11 @@ box-shadow: 0 4px 0 rgba(0,0,0,.1);
 .ipd-stat{
   font-size: 24px;
 }
+.ipd-stat-moe{
+  font-size: 12px;
+  float:right;
+  top: -.5em;
+}
 .ipd-stat-footer{
   font-size: 80%;
 }
@@ -133,7 +138,6 @@ box-shadow: 0 4px 0 rgba(0,0,0,.1);
   border: 1px solid #cacaca;
   background-color: #fff;
   color: #1a2a2a;
-  text-align: center;
 }
 .ipd-chart-info{
   font-size: 12px;
@@ -336,29 +340,31 @@ a.detaileddata{
     width: 30px;
 }
 
-.tooltip_info {
+.tooltip-IPD-info {
     position: relative;
     display: inline-block;
   /*  border-bottom: 1px dotted black; */
     font-weight: bold;
 }
 
-.tooltip_info .tooltip_info_text {
+.tooltip-IPD-info .tooltip-IPD-info-text {
     visibility: hidden;
-    width: 410px;
+    width: 100%;
     background-color: #434343;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
+    /* Position the toolitp */
     position: absolute;
     z-index: 999;
-    top:-15px;
-    left: 115%;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
     opacity: 0.7;
 }
 
-.tooltip_info .tooltip_info_text::after {
+.tooltip-IPD-info .tooltip-IPD-info-text::after {
     content: " ";
     position: absolute;
     top: 50%;
@@ -369,7 +375,7 @@ a.detaileddata{
     border-color: transparent #434343 transparent transparent;
 }
 
-.tooltip_info:hover .tooltip_info_text {
+.tooltip-IPD-info:hover .tooltip-IPD-info-text {
     visibility: visible;
     opacity: .75;
 }
@@ -379,21 +385,6 @@ a.detaileddata{
 .tooltip_info-inner {
     background-color: #fc0c44;
     color: #434343;
-}
-.tooltip_info.top .tooltip_info-arrow {
-    border-top-color: #fc0c44;
-}
-
-.tooltip_info.left .tooltip_info-arrow {
-    border-left-color: #fc0c44;
-}
-
-.tooltip_info.bottom .tooltip_info-arrow {
-    border-bottom-color: #fc0c44;
-}
-
-.tooltip_info.right .tooltip_info-arrow {
-    border-right-color: #fc0c44;
 }
 sup {
     top: -.5em;

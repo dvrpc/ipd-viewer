@@ -318,7 +318,7 @@
         
     <!--Map and Sidebar-->
        <div class="row ocontent mapUI" id="container">
-            <div class="col-sm-5 col-lg-5" id="mapsidebar">
+            <div class="col-md-4" id="mapsidebar">
                
             <div class="row" id="barcharts" style="margin-top:5px"> 
              
@@ -338,7 +338,7 @@
 
                     The standard deviations for each of the indicators in the IPD analysis are split five bins: well below average (score of 0); below average (score of 1); average (score of 2); above average (score of 3); and well above average (score of 4). See Figure 1. A summary score of all nine indicators for each Census tract (ranging from 0-36) is used to show regional concentrations of populations of interest under Title VI and EJ.<br><br>
                     <h3>Figure 1: Example Standard Deviations and Corresponding Scores</h3> 
-                            <img src="lib/images/histogram_method.png" style="margin:0px 10px 0px 3px;width:450px;" id="dvrpc-logo"/>
+                            <img src="lib/images/histogram_method.png" style="margin:0px 10px 0px 3px;width:350px;" id="dvrpc-logo"/>
                             <p>Bin C for each indicator contains census tracts at or near (within a half standard deviation from) the regional average (mean) for that indicator. Bins A, B, D, and E are then built out from the regional average; B and D go another full standard deviation out from the C bin, and A and E bins contain any remaining tracts further out from B or D, respectively. In cases where the regional average is so low that the B bin would contain Census tracts with 0% of an indicator’s designated population, the tract with estimates of zero are manually assigned to the A bin, instead of B.<br><br>
 
                             The design of this methodology is supported by both FHWA’s and FTA’s Title VI recommendations to simply identify the protected classes using demographic data from the US Census Bureau as the first step in conducting equity analyses. Additionally, FTA’s EJ guidance cautions recipients of federal funds to not be too reliant on population thresholds to determine the impact of a program, plan, or policy to a population group, but rather design a meaningful measure to identify the presence of all protected and considered population groups and then calculate the possibility of discrimination or disproportionately high and adverse effect on these populations.  
@@ -348,7 +348,7 @@
 
              <div id="Map-layers">
                <!--  IPD Top Section -->
-                    <div><h3>&nbsp;&nbsp;Concentrations of Populations Identified for Equity Analyses</i></h3></div>
+                    <div><h3>&nbsp;&nbsp;Concentrations of Populations Identified for Equity Analyses</h3></div>
                     <div style="float:left;margin-left:20px">Change Population Group:</div>
                     <div class="btn-group tradeBtn" style="margin-left:15px">
                      <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle  btn-sm">Indicators of Potential Disadvantage (IPD)  <span class="caret"></span></button>
@@ -408,7 +408,6 @@
             <div class="row" >
                 <div class="panel panel-primary" id="tractinfo_panel">
                     <div id="tract-data" class="data-info2"></div> 
-                     
                      <div class="row">
                      <div class="col-md-9" >
                     <div id="existingOV-data" class="data-info"><b>IPD Scoring by Census Tract</b></div> 
@@ -428,7 +427,7 @@
   
             </div><!--Siderbar Close-->
             <!---Map Pane -->
-            <div class="col-sm-7 col-lg-7 mapUI" id="mapDIV" style="display:none;">
+            <div class="col-md-8 mapUI" id="mapDIV" style="display:none;">
                 <div id="loading" style="display: block;">
                     <div class="loading-indicator">
                         <div class="progress progress-striped active">
@@ -499,7 +498,7 @@
 
                     <div class="tab-pane fade active in" id="IPD">
                     <h4 class="modal-title" style="color:black"> Indicators of Potential Disadvantage (IPD)</h4>
-                    <p>DVRPC identifies nine demographic groups to make up the Indicators of Potential Disadvantage (IPD) analysis:
+                    <p>DVRPC identifies nine demographic groups to make up the Indicators of Potential Disadvantage (IPD) analysis:</p>
                       <ul style="font-size:90%">
                                 <li>Youth</li>
                                 <li>Older Adults</li>
@@ -511,7 +510,7 @@
                                 <li>Disabled</li>
                                 <li>Low Income</li>
                         </ul>   
-                    The IPD score is a part of DVRPC’s Title VI compliance program, analyzing of the agency’s programs, policies, and activities. The scoring methodology calculates the percentage of each of the population groups present in every census tract in the region; compares that percentage to the regional average; and gives that concentration a score. These population groups are represented in the nine indicators of the IPD analysis. The score is determined by the concentration of that population group compared to the regional average: well below average (0 points); below average (1 point); average (2 points); above average (3 points); and well above average (4 points). The IPD score for each Census tract is the sum of the scores for each of the nine indicators in that tract.  
+                    <p>The IPD score is a part of DVRPC’s Title VI compliance program, analyzing of the agency’s programs, policies, and activities. The scoring methodology calculates the percentage of each of the population groups present in every census tract in the region; compares that percentage to the regional average; and gives that concentration a score. These population groups are represented in the nine indicators of the IPD analysis. The score is determined by the concentration of that population group compared to the regional average: well below average (0 points); below average (1 point); average (2 points); above average (3 points); and well above average (4 points). The IPD score for each Census tract is the sum of the scores for each of the nine indicators in that tract.  
                     <br><br>
                     The IPD score data can be downloaded in the NAME HERE tab.
                     </p>
@@ -617,8 +616,8 @@
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-e"></i><span class="nav-text">well above average</span></div>
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-d"></i><span class="nav-text">above average</span></div>
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-c"></i><span class="nav-text">average</span></div>
-                        <div class="row"id="legend-row"><i class="fa fa-square ipd-b"></i><span class="nav-text">below average</span></div>
-                        <div class="row"id="legend-row"><i class="fa fa-square ipd-a"></i><span class="nav-text">well below average</span></div>                   
+                        <div class="row" id="legend-row"><i class="fa fa-square ipd-b"></i><span class="nav-text">below average</span></div>
+                        <div class="row" id="legend-row"><i class="fa fa-square ipd-a"></i><span class="nav-text">well below average</span></div>                   
                     </p>
                   </div><!-- /.modal-body -->
               </div><!-- /.modal-content -->
