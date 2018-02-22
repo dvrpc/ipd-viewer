@@ -12,7 +12,7 @@
         <!-- Start Load CSS -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!--  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
         <link href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" type="text/css" href="lib/assets/typeahead.min.css" >
@@ -21,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="lib/css/leaflet_label.css">
         <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
         <link rel="stylesheet" type="text/css" href="lib/css/jquery-ui-1.10.3.custom.min.css"/>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <!-- End Load CSS -->
         <!-- Odometr -->
         <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
@@ -348,7 +349,7 @@
 
              <div id="Map-layers">
                <!--  IPD Top Section -->
-                    <div><h3>&nbsp;&nbsp;Concentrations of Populations Identified for Equity Analyses</h3></div>
+                    <div><h3><i aria-hidden='true' class='fas fa-users fa-lg'></i>&nbsp;&nbsp;Concentrations of Populations Identified for Equity Analyses</h3></div>
                     <div style="float:left;margin-left:20px">Change Population Group:</div>
                     <div class="btn-group tradeBtn" style="margin-left:15px">
                      <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle  btn-sm">Indicators of Potential Disadvantage (IPD)  <span class="caret"></span></button>
@@ -408,17 +409,21 @@
             <div class="row" >
                 <div class="panel panel-primary" id="tractinfo_panel">
                     <div id="tract-data" class="data-info2"></div> 
-                     <div class="row">
-                     <div class="col-md-9" >
-                    <div id="existingOV-data" class="data-info"><b>IPD Scoring by Census Tract</b></div> 
+                    <div class="row">
+                        <div class="col-md-9" >
+                            <div><h3><i aria-hidden='true' class='far fa-chart-bar fa-2x'></i>&nbsp;&nbsp;IPD Scoring Analysis&nbsp;&nbsp;<sup><i class='glyphicon glyphicon-info-sign' id='info-icon' onclick='legendraw()'></i></sup></h3>
+                            </div>
+                            <div class='ipd-chart-info'>The information below provides tract-level IPD scores and percentages for our nine indicators. The entire set of indicators may be downloaded from our Open Data Portal for further analysis.
+                            </div>
+                        </div>
+                        <div class="col-md-2" id="odometer-panel">
+                        <div id="odometer-title">IPD Score</div>    
+                        <div id="odometer" class="odometer" style="margin-left:10px"></div> 
+                        </div>
+                        <div class="col-md-1" >
+                        </div>
+                    </div>
                     <div id="ipd-barchart" class="barchart"></div>
-                </div>
-                <div class="col-md-2" id="odometer-panel">
-                <div id="odometer-title">IPD Score</div>    
-                <div id="odometer" class="odometer" style="margin-left:10px"></div> 
-                </div>
-                <div class="col-md-1" ></div>
-            </div>
 
                 </div>
             </div>
