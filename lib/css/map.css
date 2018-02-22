@@ -123,11 +123,18 @@ box-shadow: 0 4px 0 rgba(0,0,0,.1);
 }
 .ipd-stat-moe{
   font-size: 12px;
-  float:right;
   top: -.5em;
+  float:right;
 }
 .ipd-stat-footer{
   font-size: 80%;
+}
+.ipd-stat-score{
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+  border-radius: .3rem;
+  border: 0px transparent #fff;
 }
 #indicator-callout {
   position: relative;
