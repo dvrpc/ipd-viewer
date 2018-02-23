@@ -355,43 +355,43 @@
                      <button data-toggle="dropdown" id="mi-year-select" class="btn btn-default dropdown-toggle  btn-sm">Indicators of Potential Disadvantage (IPD)  <span class="caret"></span></button>
                         <ul class="dropdown-menu" >
                             <li>
-                              <a href="#" data-value="NewScoreMe" >
+                              <a href="#" data-value="IPD_Score">
                                 <img class="img-legend" src="lib/images/IPD.png" > Indicators of Potential Disadvantage (IPD) </a>
                             </li>
                             <li>
-                              <a href="#" data-value="AgeYouth_7">
+                              <a href="#" data-value="Y_Score">
                                 <img class="img-legend" src="lib/images/Y.png"> Youth </a>
                             </li>
                                  <li>
-                              <a href="#" data-value="AgeOlder_7" >
+                              <a href="#" data-value="OA_Score">
                                 <img class="img-legend" src="lib/images/OA.png" > Older Adults </a>
                             </li>
                              <li>
-                              <a href="#" data-value="SexFem_S_1">
+                              <a href="#" data-value="F_Score">
                                 <img class="img-legend" src="lib/images/F.png"> Female </a>
                             </li>
                              <li>
-                              <a href="#" data-value="RaceMin_11" >
+                              <a href="#" data-value="RM_Score" >
                                 <img class="img-legend" src="lib/images/RM.png" > Racial Minority </a>
                             </li>
                             <li>
-                              <a href="#" data-value="EthnMin_11" >
+                              <a href="#" data-value="EM_Score" >
                                 <img class="img-legend" src="lib/images/EM.png"> Ethnic Minority </a>
                             </li>
                             <li>
-                              <a href="#" data-value="FornBorn_7" >
+                              <a href="#" data-value="FB_Score" >
                                 <img class="img-legend" src="lib/images/FB.png" > Foreign Born </a>
                             </li>
                             <li>
-                              <a href="#" data-value="LEP_StdB_1" >
+                              <a href="#" data-value="LEP_Score" >
                                 <img class="img-legend" src="lib/images/LEP.png" > Limited English Proficiency (LEP) </a>
                             </li>
                             <li>
-                              <a href="#" data-value="Disabled_7" >
+                              <a href="#" data-value="D_Score" >
                                 <img class="img-legend" src="lib/images/D.png" > Disabled </a>
                             </li>
                             <li>
-                              <a href="#" data-value="LowInc_S_1" >
+                              <a href="#" data-value="LI_Score" >
                                 <img class="img-legend" src="lib/images/LI.png" > Low Income </a>
                             </li>
                         </ul>
@@ -470,31 +470,31 @@
                                   <a href="#map" data-target="#IPD" role="tab" data-toggle="tab">Indicators of Potential Disadvantage (IPD)</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Youth" role="tab" data-toggle="tab">Youth</a>
+                                  <a href="#map" data-target="#Youth" data-value="#Youth1" role="tab" data-toggle="tab">Youth</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Older" role="tab" data-toggle="tab" >Older Adults</a>
+                                  <a href="#map" data-target="#Older" data-value="#Older1" role="tab" data-toggle="tab" >Older Adults</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Female" role="tab" data-toggle="tab">Female</a>
+                                  <a href="#map" data-target="#Female" data-value="#Female1"role="tab" data-toggle="tab">Female</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Racial" role="tab" data-toggle="tab">Racial Minority</a>
+                                  <a href="#map" data-target="#Racial" data-value="#Racial1" role="tab" data-toggle="tab">Racial Minority</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Ethnic" role="tab" data-toggle="tab">Ethnic Minority</a>
+                                  <a href="#map" data-target="#Ethnic" data-value="#Ethnic1" role="tab" data-toggle="tab">Ethnic Minority</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Foreign" role="tab" data-toggle="tab">Foreign Born</a>
+                                  <a href="#map" data-target="#Foreign" data-value="#Foreign1" role="tab" data-toggle="tab">Foreign Born</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#LEP" role="tab" data-toggle="tab">Limited English Proficiency</a>
+                                  <a href="#map" data-target="#LEP" data-value="#LEP1"role="tab" data-toggle="tab">Limited English Proficiency</a>
                               </li>
                                <li>
-                                  <a href="#map" data-target="#Disabled" role="tab" data-toggle="tab">Disabled</a>
+                                  <a href="#map" data-target="#Disabled" data-value="#Disabled1" role="tab" data-toggle="tab">Disabled</a>
                               </li>
                               <li>
-                                  <a href="#map" data-target="#Low-Income" role="tab" data-toggle="tab">Low-Income</a>
+                                  <a href="#map" data-target="#Low-Income" data-value="#Low-Income1"role="tab" data-toggle="tab">Low-Income</a>
                               </li>
                           </ul>
                         </div>
@@ -521,7 +521,7 @@
                     </p>
                     </div>    
       
-                    <div class="tab-pane fade" id="Youth">
+                    <div class="tab-pane fade" id="Youth" value="Youth1">
                     <h4 class="modal-title" style="color:black">Youth</h4>
                     <p>  <img src="lib/images/Y.png"> The Youth indicator addresses<a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank"> FHWA’s EJ recommendation </a>to include children as a “traditionally underserved” population group when conducting equity analyses and<a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank"> FHWA’s Additional Nondiscrimination Requirement </a>under the Age Discrimination Act of 1975 to not discriminate based on age.<br><br>
 
@@ -530,7 +530,7 @@
                     </p>
                     </div>
 
-                    <div class="tab-pane fade" id="Older">
+                    <div class="tab-pane fade" id="Older" value="Older1">
                     <h4 class="modal-title" style="color:black">Older Adults</h4>
                     <p>The Older Adults indicator addresses the populations included in <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank">FHWA’s Additional Nondiscrimination Requirement </a> under the Age Discrimination Act of 1975 and <a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank"> FHWA Environmental Justice recommendations </a> to not discriminate based on age.
                     </p>    
@@ -538,7 +538,7 @@
                     </p>
                     </div>
 
-                    <div class="tab-pane fade" id="Female">
+                    <div class="tab-pane fade" id="Female" value="Female1">
                     <h4 class="modal-title" style="color:black">Female</h4>
                     <p>The Female indicator addresses <a href="https://www.fhwa.dot.gov/legsregs/directives/fapg/cfr0200.htm" target="_blank">FHWA’s Additional Nondiscrimination Requirement </a> under Section 162 (a) of the Federal-Aid Highway Act of 1973 (23 USC 324) that no person shall be subject to discrimination on the basis of sex under any program or activity receiving Federal assistance. This additional Nondiscrimination Requirement is connected to Title IX of the Civil Rights Act, which designates women as a protected class.
                     </p>
@@ -546,7 +546,7 @@
                     </p>
                      </div>
 
-                    <div class="tab-pane fade" id="Racial">
+                    <div class="tab-pane fade" id="Racial" value="Racial1">
                     <h4 class="modal-title" style="color:black">Racial Minority</h4>
                     <p>The Racial Minority indicator addresses the populations included in <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank"> Title VI of the Civil Rights Act</a>,  <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank"> FHWA’s Title VI and Additional Nondiscrimination Requirements </a>, and  <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank"> FTA’s Title VI requirements and guidelines </a>, all of which prohibit discrimination of persons in the United States based on race.
                     </p>
@@ -555,7 +555,7 @@
                     </p>
                     </div>
                                 
-                    <div class="tab-pane fade" id="Ethnic">
+                    <div class="tab-pane fade" id="Ethnic" id="Ethnic1">
                     <h4 class="modal-title" style="color:black">Ethnic</h4>
                     <p>The Ethnic Minority indicator addresses the populations included in <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank"> Title VI of the Civil Rights Act</a>,  <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank"> FHWA’s Title VI and Additional Nondiscrimination Requirements </a>, and  <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank"> FTA’s Title VI requirements and guidelines </a>, and the recommendation to consider minority under the <a href="https://www.archives.gov/files/federal-register/executive-orders/pdf/12898.pdf" target="_blank"> Executive Order on Environmental Justice </a>.
                     </p>
@@ -617,13 +617,11 @@
                       <h4 class="modal-title modal-legend">IPD Score Analysis</h4>
                   </div>
                   <div class="modal-body">
-                    <p>   
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-e"></i><span class="nav-text">well above average</span></div>
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-d"></i><span class="nav-text">above average</span></div>
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-c"></i><span class="nav-text">average</span></div>
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-b"></i><span class="nav-text">below average</span></div>
                         <div class="row" id="legend-row"><i class="fa fa-square ipd-a"></i><span class="nav-text">well below average</span></div>                   
-                    </p>
                   </div><!-- /.modal-body -->
               </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
