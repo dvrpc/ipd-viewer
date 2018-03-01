@@ -15,12 +15,13 @@
 }
 #cardclick{
   color: #434343;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 15px 0px 10px;
 }
 #Map-layers{
   display:none;
   margin-left: 0px;
   padding-left: 15px;
+  padding-right:15px;
   margin-bottom: 5px;
   -webkit-box-shadow: 0 10px 5px #b7b7b7;
   -moz-box-shadow: 0 10px 5px #b7b7b7;
@@ -115,6 +116,9 @@ margin: 15px 0px 15px 15px;
 font-size: 14px;
 color: rgb(102, 102, 102);
 box-shadow: 0 4px 0 rgba(0,0,0,.1);
+}
+#tract-data-chart {
+margin: 15px 0px 15px 15px;
 }
 #ipd-barchart{
   width:400px;
