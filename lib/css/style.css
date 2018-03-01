@@ -238,6 +238,10 @@ box-shadow: 0 0 10px #b7b7b7;
 .ipd-card-box{
     max-width: 50%;
     margin: 2em auto 0;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
