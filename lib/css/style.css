@@ -211,7 +211,6 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 .bottom-row{
     margin-top: 25px;
     height: 350px;
-    width: 49.5%;
 }
 .title-vi-info{
 background-color: #fff;
@@ -219,7 +218,7 @@ color: #434343;
 font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
-padding: 10px 25px 5px;
+padding: 10px 25px 25px;
 margin: 0px;
 box-shadow: 0 0 10px #b7b7b7;
 }
