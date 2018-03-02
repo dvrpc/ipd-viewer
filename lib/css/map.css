@@ -99,10 +99,15 @@ background-color: #313644;
 }
 .location-list {
     color: #fefefe;
-   /* background-color: #434343; */
     background-color: #313644;
     margin: 0px 0px 10px -20px;
     padding: 1rem 1.25rem .5rem;
+}
+a.location-list-link:hover,a.location-list-link:focus {
+    color: #ffa600 !important;
+}
+.location-list-link{
+ color:#ADD8E6; 
 }
 .data-info {
 color: black;
@@ -135,7 +140,7 @@ margin: 15px 0px 15px 15px;
   font-size: 80%;
 }
 .ipd-stat-score{
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   font-style: italic;
   border-radius: .3rem;
@@ -152,7 +157,7 @@ margin: 15px 0px 15px 15px;
   color: #1a2a2a;
 }
 .ipd-chart-info{
-  font-size: 12px;
+  font-size: 14px;
   margin: 0px 15px 10px 0px;
 }
 .cat-desc {

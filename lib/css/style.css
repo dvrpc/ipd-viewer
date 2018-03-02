@@ -11,7 +11,7 @@ body {
 p {
       /*  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
   font-family:"Open Sans", sans-serif;
-  font-size:14px;
+  font-size:16px;
 }
 h1 {
     font-size: 24px;
@@ -75,9 +75,6 @@ margin-right: 5px;
   /*  border-bottom-color: #6689BC !important; */
     border-bottom-color: #008d92 !important;
 }
-.hp-link {
-    color:white !important;
-}
 .navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
     color: #434343 !important;
 }
@@ -89,15 +86,22 @@ margin-right: 5px;
     background-color: #008d92 !important;  
 }
 a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-check i:hover{
-  /*  color: #5876A2 !important; */
-    color: #434343 !important; 
+   color: #5876A2 !important; 
 }
-
 .landingLink>a{
-  color: #FFFFFF !important;
+  color: red !important;
 }
 .landingUI>a {
   color: #FFFFFF !important;
+}
+.hp-link {
+    color:white !important;
+}
+a.hp-link {
+    color: #fff !important;
+}
+a.hp-link:hover{
+    color: #DDD !important;
 }
 .landingUI {
   margin-right:50px;
@@ -130,7 +134,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     min-height: 200px;
     background-color: #312867;
     margin-top: 50px;
-    font-size: 12px;
+    font-size: 16px;
 }
 .tooltip {
     position: absolute;
@@ -158,7 +162,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 }
 
 /*--------------------------------------------------------*/
-/*--------  TOD Home Page  Color Styles  ---------------------*/
+/*--------  IPD Home Page  Color Styles  ---------------------*/
 /*--------------------------------------------------------*/
 #home {
     margin-top:20px;
@@ -191,6 +195,19 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     font-size: 20px;
     margin-top: 10px;
 }
+.equity-logo{
+    margin:0px 0px 10px 0px;
+    width:280px
+}
+.map-icon{
+    float:left;
+    margin:15px 10px 0px 3px;
+    height:45px
+}
+.histogram-method{
+    margin:0px 10px 0px 3px;
+    width:450px;
+}
 .hp-tool-links h3{
     color: #24abe2;
 }
@@ -205,7 +222,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 }
 .ipd-info {
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     overflow-y: auto;
 }
 
@@ -216,7 +233,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 .title-vi-info{
 background-color: #fff;
 color: #434343;
-font-size: 14px;
+font-size: 16px;
 overflow-y: auto;
 border-left: 2px solid #fff;
 padding: 10px 25px 25px;
@@ -243,7 +260,7 @@ box-shadow: 0 0 10px #b7b7b7;
 .ipd-method {
 background-color: #fff;
 color: #434343;
-font-size: 14px;
+font-size: 16px;
 overflow-y: auto;
 border-left: 2px solid #fff;
 padding: 10px 25px 5px;
