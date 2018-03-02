@@ -11,7 +11,7 @@ body {
 p {
       /*  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
   font-family:"Open Sans", sans-serif;
-    font-size:13px;
+  font-size:14px;
 }
 h1 {
     font-size: 24px;
@@ -31,10 +31,11 @@ h3 {
     color: #333;
 }
 .home-headers {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0px;
+    font-size: 24px;
+    font-weight: 700;
     color: rgb(88,34,103);
+    text-align: center;
+    margin: 10px 0 5px;
 }
 label {
     font-weight: 400;
@@ -207,15 +208,33 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     font-size: 14px;
     overflow-y: auto;
 }
+
+.bottom-row{
+    margin-top: 25px;
+    height: 350px;
+}
 .title-vi-info{
 background-color: #fff;
 color: #434343;
 font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
-padding: 10px 25px 5px;
+padding: 10px 25px 25px;
 margin: 0px;
 box-shadow: 0 0 10px #b7b7b7;
+}
+
+.ipd-factor-list{
+    font-size: .9em;
+}
+
+.ipd-card-box{
+    max-width: 50%;
+    margin: 2em auto 0;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
@@ -296,3 +315,4 @@ margin: 0px;
     border: none;
     background: none;
 }
+
