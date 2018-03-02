@@ -5,9 +5,9 @@
 #mapsidebar {
   height: 100%;
   padding: 15px;
-  overflow: auto;
   background-color: #efefef !important;
   margin-top: 0px;
+  overflow-x:hidden;
 }
 .barchart{
   height:100%;
@@ -80,6 +80,7 @@ background-color: #313644;
   color: #fff;
   text-align: center;
 }
+
 #tractinfo_panel{
   background-color:#EFEFEF;
   display:none; 
@@ -87,10 +88,11 @@ background-color: #313644;
   height:300px;
   border:0px;
   -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.0);
+  padding-right: 15px;
 }
 .universe-callout {
-  margin: 0px 10px 10px 10px;
-  padding: .625rem;
+  margin: 0px 15px 10px 10px;
+  padding: 10px;
   border-radius: .3rem;
   border: 1px solid #cacaca;
   background-color: #fff;
