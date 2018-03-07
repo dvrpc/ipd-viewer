@@ -200,7 +200,10 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     min-height: 57px;
     border-bottom: 1px solid #ddd;
     background-color: #efefef;
-    background-image: url(images/p5.png);
+}
+.disclaimer-tab-header{
+    text-align: center;
+    color: #582267;
 }
 .ipd-info {
     color: black;
