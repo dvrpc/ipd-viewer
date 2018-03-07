@@ -232,6 +232,8 @@ box-shadow: 0 0 10px #b7b7b7;
 
 .ipd-factor-list{
     font-size: .9em;
+    padding: 0;
+    margin: auto;
 }
 
 .ipd-card-box{
