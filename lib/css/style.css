@@ -205,6 +205,11 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     text-align: center;
     color: #582267;
 }
+
+.disclaimer-tab-emphasis{
+    color: #582267;
+    text-shadow: 0 0.025em #582267, 0 -0.025em #582267, 0.02em 0 #333, -0.02em 0 #582267;
+}
 .ipd-info {
     color: black;
     font-size: 14px;
