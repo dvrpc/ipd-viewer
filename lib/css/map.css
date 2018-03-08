@@ -119,12 +119,12 @@ color: rgb(102, 102, 102);
 }
 .data-info2 {
 color: black;
-margin: 15px 0px 15px 15px;
+margin: 5px 0px 15px 15px;
 font-size: 14px;
 color: rgb(102, 102, 102);
 box-shadow: 0 4px 0 rgba(0,0,0,.1);
 }
-#tract-data-chart {
+#data-info2-chart {
 margin: 15px 0px 15px 15px;
 }
 #ipd-barchart{
