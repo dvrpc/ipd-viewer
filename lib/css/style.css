@@ -331,3 +331,18 @@ margin: 0px;
     border: none;
     background: none;
 }
+
+/* INDICATOR MODALS - DOWNLOAD LINKS (Robert Beatty: 3/5/2018) */
+    .download-block{
+        display: inline-block;
+        float: right;
+        width: 80%;
+        margin: auto;
+    }
+    .download-block>p{
+        display: inline;
+    }
+    .download-link{
+        display: inline-block;
+        margin: 0 5px;
+    }
