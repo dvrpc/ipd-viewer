@@ -424,3 +424,11 @@ margin-right:8px;
 .tooltip-IPD-info-top:hover .tooltip-IPD-info-top-text {
     visibility: visible;
 }
+
+.ipd-indicator-tract{
+  color:#582267;
+  text-shadow: 0 0.025em #582267, 0 -0.025em #582267, 0.02em 0 #333, -0.02em 0 #582267;
+}
+.ipd-indicator-tract:hover{
+  color: #ffa600;
+}
