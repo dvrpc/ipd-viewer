@@ -131,9 +131,9 @@
                     display: none !important;
                 }
             }
-            /**/
-            /*Changes Made By Marc On 3/1/2018 */
-            /**/
+            a {
+                color: #582267;
+            }
             p, li{
                 font-size: 14px;
             }
@@ -179,8 +179,8 @@
                     </button>
                 <div class="navbar-brand">
                     <div class="logo-container">
-                        <a href="//www.dvrpc.org" target="_blank">
-                            <img src="lib/images/DVRPCLogo_Full_White.png" style=" height:35px; padding-right: 10px;" id="dvrpc-logo"/>
+                        <a href="/" target="_blank" aria-label="DVRPC homepage">
+                            <img src="lib/images/DVRPCLogo_Full_White.png" style=" height:35px; padding-right: 10px;" id="dvrpc-logo" alt="DVRPC"/>
                         </a> 
                         Equity Analysis for the Greater Philadelphia Region <span style="font-size:14px">(Beta)</span>
                     </div>    
@@ -189,7 +189,7 @@
             <div id="navbar-links" class="navbar-collapse collapse">
                 <div id="nav_search" class="navbar-form navbar-right mapUI" style="display:none;">
                     <div class="input-group search-container">
-                        <input id="searchbox" type="text" class="form-control" placeholder="enter a municipality">
+                        <input id="searchbox" type="text" class="form-control" placeholder="enter a municipality" aria-label="Search by municipality">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                             <div class="title-vi-info bottom-row column-left">
                                 <h1 class="home-headers-2">DVRPC Analysis</h1>    
                                 <p class="first-paragraph">
-                                    The IPD analysis identifies populations of interest under Title VI and EJ using U.S. Census <a href="https://www.census.gov/programs-surveys/acs/" target="_blank" rel="noopener">American Community Survey (ACS) </a> 2012-2016 five-year estimates data and maps these populations in each of the Census tracts in the region via GIS. Each population group is an “indicator” in the analysis and includes the following: 
+                                    The IPD analysis identifies populations of interest under Title VI and EJ using U.S. Census <a href="https://www.census.gov/programs-surveys/acs/" target="_blank" rel="noopener">American Community Survey (ACS) </a> 2011-2015 five-year estimates data and maps these populations in each of the Census tracts in the region via GIS. Each population group is an “indicator” in the analysis and includes the following: 
                                 </p> 
                                  <div class="row">
                                      <div class="col-xs-4 ipd-factor-list">  
@@ -361,11 +361,11 @@
 
                             The score calculation is determined by standard deviations relative to an indicator’s regional average. This score classifies the concentration of the populations of interest under Title VI and EJ present in every census tract in the region. These population groups are represented in the nine indicators in the IPD analysis.<br><br> 
 
-                            The data for each of the indicators in the IPD analysis are split five bins: well below average (score of 0); below average (score of 1); average (score of 2); above average (score of 3); and well above average (score of 4). See Figure 1 below. A summary score of all nine indicators for each Census tract (ranging from 0-36) is used to show regional concentrations of populations of interest under Title VI and EJ. 
+                            The standard deviations for each of the indicators in the IPD analysis are split five bins: well below average (score of 0); below average (score of 1); average (score of 2); above average (score of 3); and well above average (score of 4). See Figure 1. A summary score of all nine indicators for each Census tract (ranging from 0-36) is used to show regional concentrations of populations of interest under Title VI and EJ. 
                             </p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <p class="first-paragraph">Bin 2 for each indicator contains census tracts at or near (within a half standard deviation from) the regional average (mean) for that indicator. Bins 4, 3, 1, and 0 are then built out from the regional average; Bins 1 and 3 go another full standard deviation out from bin 2, and bins 0 and 4 contain any remaining tracts further out from 1 or 3, respectively. In cases where the regional average is so low that bin 1 would contain Census tracts with 0% of an indicator’s designated population, the tract with estimates of zero are manually assigned to bin 0, instead of bin 1.<br><br>
+                            <p class="first-paragraph">Bin C for each indicator contains census tracts at or near (within a half standard deviation from) the regional average (mean) for that indicator. Bins 4, 3, 1, and 0 are then built out from the regional average; Bins 1 and 3 go another full standard deviation out from the 2 bin, and bins 0 and 4 contain any remaining tracts further out from 1 or 3, respectively. In cases where the regional average is so low that the 1 bin would contain Census tracts with 0% of an indicator’s designated population, the tract with estimates of zero are manually assigned to the 0 bin, instead of 1.<br><br>
 
                             The design of this methodology is supported by both FHWA’s and FTA’s Title VI recommendations to simply identify the protected classes using demographic data from the US Census Bureau as the first step in conducting equity analyses. Additionally, <a href="https://www.transit.dot.gov/regulations-and-guidance/environmental-programs/environmental-justice/environmental-justice-faqs" target="_blank" rel="noopener">FTA’s EJ guidance </a>cautions recipients of federal funds to not be too reliant on population thresholds to determine the impact of a program, plan, or policy to a population group, but rather design a meaningful measure to identify the presence of all protected and considered population groups and then calculate the possibility of discrimination or disproportionately high and adverse effect on these populations. 
                             </p>
@@ -420,43 +420,43 @@
                         <ul class="dropdown-menu" id="layer-change">
                             <li>
                               <a href="#" data-value="IPD_SCORE">
-                                <img class="img-legend" src="lib/images/IPD.png" > Indicators of Potential Disadvantage (IPD) </a>
+                                <img class="img-legend" src="lib/images/IPD.png" alt="IPD icon"> Indicators of Potential Disadvantage (IPD) </a>
                             </li>
                             <li>
                               <a href="#" data-value="Y_SCORE">
-                                <img class="img-legend" src="lib/images/Y.png"> Youth </a>
+                                <img class="img-legend" src="lib/images/Y.png" alt="Youth icon"> Youth </a>
                             </li>
                                  <li>
                               <a href="#" data-value="OA_SCORE">
-                                <img class="img-legend" src="lib/images/OA.png" > Older Adults </a>
+                                <img class="img-legend" src="lib/images/OA.png" alt="Older Adults icon"> Older Adults </a>
                             </li>
                              <li>
                               <a href="#" data-value="F_SCORE">
-                                <img class="img-legend" src="lib/images/F.png"> Female </a>
+                                <img class="img-legend" src="lib/images/F.png" alt="Female icon"> Female </a>
                             </li>
                              <li>
                               <a href="#" data-value="RM_SCORE" >
-                                <img class="img-legend" src="lib/images/RM.png" > Racial Minority </a>
+                                <img class="img-legend" src="lib/images/RM.png" alt="Racial Minority icon"> Racial Minority </a>
                             </li>
                             <li>
                               <a href="#" data-value="EM_SCORE" >
-                                <img class="img-legend" src="lib/images/EM.png"> Ethnic Minority </a>
+                                <img class="img-legend" src="lib/images/EM.png" alt="Ethnic Minority icon"> Ethnic Minority </a>
                             </li>
                             <li>
                               <a href="#" data-value="FB_SCORE" >
-                                <img class="img-legend" src="lib/images/FB.png" > Foreign Born </a>
+                                <img class="img-legend" src="lib/images/FB.png" alt="Foreign Born icon"> Foreign Born </a>
                             </li>
                             <li>
                               <a href="#" data-value="LEP_SCORE" >
-                                <img class="img-legend" src="lib/images/LEP.png" > Limited English Proficiency (LEP) </a>
+                                <img class="img-legend" src="lib/images/LEP.png" alt="Limited English Proficiency icon"> Limited English Proficiency (LEP) </a>
                             </li>
                             <li>
                               <a href="#" data-value="D_SCORE" >
-                                <img class="img-legend" src="lib/images/D.png" > Disabled </a>
+                                <img class="img-legend" src="lib/images/D.png" alt="Disabled icon"> Disabled </a>
                             </li>
                             <li>
                               <a href="#" data-value="LI_SCORE" >
-                                <img class="img-legend" src="lib/images/LI.png" > Low Income </a>
+                                <img class="img-legend" src="lib/images/LI.png" alt="Low Income icon"> Low Income </a>
                             </li>
                         </ul>
                     </div>
@@ -473,7 +473,7 @@
             <div class="row" >
                 <div class="panel panel-primary" id="tractinfo_panel">
                     <div id="tract-data" class="data-info2"></div> 
-                      <div><h3 style="text-align: center;"><i aria-hidden='true' class='far fa-chart-bar fa-2x'></i>&nbsp;&nbsp;IPD Scoring Analysis&nbsp;&nbsp;<sup><i class='glyphicon glyphicon-info-sign' id='info-icon' onclick='legendraw()'></i></sup></h3>
+                      <div><h3 style="text-align: center;"><i aria-hidden='true' class='far fa-chart-bar fa-2x'></i>&nbsp;&nbsp;IPD Scoring Analysis&nbsp;&nbsp;<sup><i class='glyphicon glyphicon-info-sign info-icon' onclick='legendraw()'></i></sup></h3>
                             </div>
                     <div class="row">
                         <div class="col-md-7" >
