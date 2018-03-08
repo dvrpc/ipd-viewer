@@ -92,6 +92,12 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     color: #434343 !important; 
 }
 
+.navbar-brand{
+    height: 60px;
+}
+
+
+
 .landingLink>a{
   color: #FFFFFF !important;
 }
@@ -252,6 +258,13 @@ box-shadow: 0 0 10px #b7b7b7;
     left: 0;
     right: 0;
 }
+@media screen and (max-width: 1200px){
+    .ipd-card-box{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
@@ -332,6 +345,18 @@ margin: 0px;
     background: none;
 }
 
+.tab-image{
+    text-align: center;
+}
+.tab-image>img{
+    display: inline-block;
+    margin: 0 5px
+}
+.tab-image>figcaption{
+    text-align: left;
+    margin: 20px 0;
+
+}
 /* INDICATOR MODALS - DOWNLOAD LINKS (Robert Beatty: 3/5/2018) */
     .download-block{
         display: inline-block;
