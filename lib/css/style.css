@@ -11,7 +11,7 @@ body {
 p {
       /*  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
   font-family:"Open Sans", sans-serif;
-  font-size:16px;
+    font-size:13px;
 }
 h1 {
     font-size: 24px;
@@ -31,11 +31,10 @@ h3 {
     color: #333;
 }
 .home-headers {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
     color: rgb(88,34,103);
-    text-align: center;
-    margin: 10px 0 5px;
 }
 label {
     font-weight: 400;
@@ -75,6 +74,9 @@ margin-right: 5px;
   /*  border-bottom-color: #6689BC !important; */
     border-bottom-color: #008d92 !important;
 }
+.hp-link {
+    color:white !important;
+}
 .navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
     color: #434343 !important;
 }
@@ -86,22 +88,21 @@ margin-right: 5px;
     background-color: #008d92 !important;  
 }
 a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-check i:hover{
-   color: #5876A2 !important; 
+  /*  color: #5876A2 !important; */
+    color: #434343 !important; 
 }
+
+.navbar-brand{
+    height: 60px;
+}
+
+
+
 .landingLink>a{
-  color: red !important;
+  color: #FFFFFF !important;
 }
 .landingUI>a {
   color: #FFFFFF !important;
-}
-.hp-link {
-    color:white !important;
-}
-a.hp-link {
-    color: #fff !important;
-}
-a.hp-link:hover{
-    color: #DDD !important;
 }
 .landingUI {
   margin-right:50px;
@@ -134,7 +135,7 @@ a.hp-link:hover{
     min-height: 200px;
     background-color: #312867;
     margin-top: 50px;
-    font-size: 16px;
+    font-size: 12px;
 }
 .tooltip {
     position: absolute;
@@ -162,7 +163,7 @@ a.hp-link:hover{
 }
 
 /*--------------------------------------------------------*/
-/*--------  IPD Home Page  Color Styles  ---------------------*/
+/*--------  TOD Home Page  Color Styles  ---------------------*/
 /*--------------------------------------------------------*/
 #home {
     margin-top:20px;
@@ -195,19 +196,6 @@ a.hp-link:hover{
     font-size: 20px;
     margin-top: 10px;
 }
-.equity-logo{
-    margin:0px 0px 10px 0px;
-    width:280px
-}
-.map-icon{
-    float:left;
-    margin:15px 10px 0px 3px;
-    height:45px
-}
-.histogram-method{
-    margin:0px 10px 0px 3px;
-    width:450px;
-}
 .hp-tool-links h3{
     color: #24abe2;
 }
@@ -218,11 +206,19 @@ a.hp-link:hover{
     min-height: 57px;
     border-bottom: 1px solid #ddd;
     background-color: #efefef;
-    background-image: url(images/p5.png);
+}
+.disclaimer-tab-header{
+    text-align: center;
+    color: #582267;
+}
+
+.disclaimer-tab-emphasis{
+    color: #582267;
+    text-shadow: 0 0.025em #582267, 0 -0.025em #582267, 0.02em 0 #333, -0.02em 0 #582267;
 }
 .ipd-info {
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     overflow-y: auto;
 }
 
@@ -233,7 +229,7 @@ a.hp-link:hover{
 .title-vi-info{
 background-color: #fff;
 color: #434343;
-font-size: 16px;
+font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
 padding: 10px 25px 25px;
@@ -241,8 +237,17 @@ margin: 0px;
 box-shadow: 0 0 10px #b7b7b7;
 }
 
+.home-headers-2{
+    font-weight: 700;
+    color: rgb(88,34,103);
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
 .ipd-factor-list{
     font-size: .9em;
+    padding: 0;
+    margin: auto;
 }
 
 .ipd-card-box{
@@ -253,6 +258,13 @@ box-shadow: 0 0 10px #b7b7b7;
     left: 0;
     right: 0;
 }
+@media screen and (max-width: 1200px){
+    .ipd-card-box{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
@@ -260,7 +272,7 @@ box-shadow: 0 0 10px #b7b7b7;
 .ipd-method {
 background-color: #fff;
 color: #434343;
-font-size: 16px;
+font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
 padding: 10px 25px 5px;
@@ -333,3 +345,29 @@ margin: 0px;
     background: none;
 }
 
+.tab-image{
+    text-align: center;
+}
+.tab-image>img{
+    display: inline-block;
+    margin: 0 5px
+}
+.tab-image>figcaption{
+    text-align: left;
+    margin: 20px 0;
+
+}
+/* INDICATOR MODALS - DOWNLOAD LINKS (Robert Beatty: 3/5/2018) */
+    .download-block{
+        display: inline-block;
+        float: right;
+        width: 80%;
+        margin: auto;
+    }
+    .download-block>p{
+        display: inline;
+    }
+    .download-link{
+        display: inline-block;
+        margin: 0 5px;
+    }
