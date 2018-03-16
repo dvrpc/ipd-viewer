@@ -263,11 +263,6 @@ margin: 15px 0px 15px 15px;
   color:#b0b0b0;
   padding-bottom: 10px;
 }
-.info-icon {
-    color: #aaa8a8;
-    margin-right:5px;
-    cursor: pointer;
-}
 #loading {
   position: absolute;
   width: 220px;
@@ -383,9 +378,12 @@ a.detaileddata{
 }
 
 
-sup {
-    top: -.5em;
+#sup-info-icon {
+  vertical-align: super;
+  font-size: smaller;  
+  cursor: pointer; 
 }
+
 .searchico{
 width:18px; height:18px;
 margin-right:8px;
@@ -414,7 +412,7 @@ margin-right:8px;
 }
 
 .tooltip-IPD-info-top .tooltip-IPD-info-top-text::after {
-       content: "";
+    content: "";
     position: absolute;
     top: 100%;
     left: 50%;
