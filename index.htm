@@ -473,7 +473,7 @@
             <div class="row" >
                 <div class="panel panel-primary" id="tractinfo_panel">
                     <div id="tract-data" class="data-info2"></div> 
-                      <div><h3 style="text-align: center;"><i aria-hidden='true' class='far fa-chart-bar fa-2x'></i>&nbsp;&nbsp;IPD Scoring Analysis</h3>
+                      <div><h3 style="text-align: center;"><i aria-hidden='true' class='far fa-chart-bar fa-2x'></i>&nbsp;&nbsp;IPD Scoring Analysis <i class='glyphicon glyphicon-info-sign' id='sup-info-icon'data-id='IPD1' onClick='methodinfo()'></i></h3>
                             </div>
                     <div class="row">
                         <div class="col-md-7" >
@@ -733,6 +733,24 @@
     </div>
     <!-- /.modal --> 
 <!-- end Category Modal -->
+                <div class="modal fade" id="MethodModal">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title modal-legend">Methodology</h4>
+                        </div>
+                        <div class="modal-body">
+                        <p>The first step in conducting an equity analysis is identifying the protected classes and population groups of interest using demographic data from the US Census Bureau. These population groups are represented by the nine indicators in the IPD analysis: youth, older adults, female, racial minority, ethnic minority, foreign born, limited English proficiency, disabled, and low-income. The concentrations of these populations are mapped for each Census tract in the region.<br><br>
+
+                         Next, the IPD score for each tract is calculated for use in DVRPC’s policies, programs, and processes. The IPD score calculation is determined by standard deviations relative to an indicator’s regional average. This score classifies the concentration of the population groups of interest on a scale from “well below average” to “well above average” in every census tract in the region.<br><br>    
+
+                         For more information, see the Methodology section under the “About” tab.
+                        </p>   
+                        </div>
+                      </div>
+                    </div>
+                </div>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="lib/assets/jquery-ui-1.10.3.custom.min.js"></script>
