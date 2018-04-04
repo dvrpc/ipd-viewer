@@ -92,6 +92,12 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     color: #434343 !important; 
 }
 
+.navbar-brand{
+    height: 60px;
+}
+
+
+
 .landingLink>a{
   color: #FFFFFF !important;
 }
@@ -200,22 +206,62 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     min-height: 57px;
     border-bottom: 1px solid #ddd;
     background-color: #efefef;
-    background-image: url(images/p5.png);
+}
+.disclaimer-tab-header{
+    text-align: center;
+    color: #582267;
+}
+
+.disclaimer-tab-emphasis{
+    color: #582267;
+    text-shadow: 0 0.025em #582267, 0 -0.025em #582267, 0.02em 0 #333, -0.02em 0 #582267;
 }
 .ipd-info {
     color: black;
     font-size: 14px;
     overflow-y: auto;
 }
+
+.bottom-row{
+    margin-top: 25px;
+    height: 350px;
+}
 .title-vi-info{
 background-color: #fff;
 color: #434343;
 font-size: 14px;
-overflow-y: auto;
+overflow-y: hidden;
 border-left: 2px solid #fff;
-padding: 10px 25px 5px;
+padding: 10px 25px 25px;
 margin: 0px;
 box-shadow: 0 0 10px #b7b7b7;
+}
+
+.home-headers-2{
+    font-weight: 700;
+    color: rgb(88,34,103);
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+.ipd-factor-list{
+    font-size: .9em;
+    padding: 0;
+    margin: auto;
+}
+
+.ipd-card-box{
+    max-width: 50%;
+    margin: 20px auto;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+@media screen and (max-width: 1200px){
+    .ipd-card-box{
+        width: 100%;
+        bottom: 0;
+    }
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
@@ -296,3 +342,30 @@ margin: 0px;
     border: none;
     background: none;
 }
+
+.tab-image{
+    text-align: center;
+}
+.tab-image>img{
+    display: inline-block;
+    margin: 0 5px
+}
+.tab-image>figcaption{
+    text-align: left;
+    margin: 20px 0;
+
+}
+/* INDICATOR MODALS - DOWNLOAD LINKS (Robert Beatty: 3/5/2018) */
+    .download-block{
+        display: inline-block;
+        float: right;
+        width: 80%;
+        margin: auto;
+    }
+    .download-block>p{
+        display: inline;
+    }
+    .download-link{
+        display: inline-block;
+        margin: 0 5px;
+    }
