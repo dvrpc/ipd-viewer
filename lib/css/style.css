@@ -42,7 +42,7 @@ label {
 .logo-title{
     font-weight: 700;
     font-size: 22px;
-    color: #FFF;
+    color: #FFF !important;
 }
  .feedback{
     text-align: center;
