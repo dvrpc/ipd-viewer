@@ -12,7 +12,6 @@
         <!-- Start Load CSS -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-      <!--  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
         <link href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" type="text/css" href="lib/assets/typeahead.min.css" >
@@ -60,7 +59,7 @@
             @media (max-width: 1360px){
                 .search-container{
                     width:250px!important;
-                }
+               }
             }
             @media (max-width: 1270px) {
                 .navbar .navbar-brand {
@@ -72,34 +71,23 @@
                 }
                 
             }
-            @media (max-width: 1180px) {
-               .search-container {
-                    width: 200px!important;
-                }
-                p {
-                    font-size: 12px;
-                }
-                .tod-method{
-                    font-size: 12px;
-                    height: 510px;
+            @media (max-width: 1330px) {
+                .logo-title{
+                   font-size: 15px;
                 }
             }
-            @media (max-width: 1250px) {
-               .main-title {
-                    display: none;
+            @media (max-width: 1170px) {
+                .btn-success{
+                   display: none;
                 }
             }
             @media (max-width: 960px) {
-               .search-container {
-                    display :none!important;
-                }
-            .btn-responsive {
-            padding:4px 9px;
-            font-size:90%;
-            line-height: 1.2;
-            margin-top: 10px;
-            } 
-
+                .btn-responsive {
+                padding:4px 9px;
+                font-size:90%;
+                line-height: 1.2;
+                margin-top: 10px;
+                } 
             }
             @media (max-width: 768px){
                 .search-container {
@@ -152,13 +140,34 @@
                 padding-top: 1%;
                 text-align: center;
             }
-            #equity{
+            #equity {
                 height: 250px;
                 width: 270px;
             }
-            @media (max-width: 988px){
-                .bottom-row{
-                    width: 100%;
+            @media (max-width: 1000px) {
+                .navbar-header {
+                    float: none;
+                }
+                .navbar-toggle {
+                    display: block;
+                }
+                .navbar-collapse {
+                    border-top: 1px solid transparent;
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+                }
+                .navbar-collapse.collapse {
+                    display: none!important;
+                }
+                .navbar-nav {
+                    float: none!important;
+                    margin: 7.5px -15px;
+                }
+                .navbar-nav>li {
+                    float: none;
+                }
+                .navbar-nav>li>a {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
                 }
             }
         </style> 
@@ -179,10 +188,13 @@
                     </button>
                 <div class="navbar-brand">
                     <div class="logo-container">
-                        <a href="/" target="_blank" aria-label="DVRPC homepage">
+                        <span>
+                        <a href="https://www.dvrpc.org/" target="_blank" aria-label="DVRPC homepage" rel="noopener">
                             <img src="lib/images/DVRPCLogo_Full_White.png" style=" height:35px; padding-right: 10px;" id="dvrpc-logo" alt="DVRPC"/>
+                        <span class="logo-title">Equity Analysis for the Greater Philadelphia Region <span style="font-size:14px">(Beta)</span></span>
                         </a> 
-                        Equity Analysis for the Greater Philadelphia Region <span style="font-size:14px">(Beta)</span>
+                        
+                        </span>
                     </div>    
                 </div>
             </div>
@@ -212,6 +224,8 @@
                         <a href="#map" data-tab="map" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;View Map</a>
                     </li>
                 </ul>
+                  <button type="button" style=" margin:10px 10px 0px 0px;float:right;" class="btn btn-sm btn-success"<a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="surveylaunch(); return false;"><i class="glyphicon glyphicon-pencil" ></i>&nbsp;&nbsp;<b>We want your feedback</b></a>
+                    </button>
             </div><!--/.navbar-collapse -->
         </div>
         <!--landing pages-->
@@ -237,10 +251,13 @@
 
                             <div class="col-md-6">
                                 <!-- <h1 class="home-headers-2">About the IPD Analysis</h1> -->
-                                <p class="first-paragraph">Under <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank" rel="noopener">Title VI of the Civil Rights Act</a> and the <a href="https://www.archives.gov/files/federal-register/executive-orders/pdf/12898.pdf" target="_blank" rel="noopener">Executive Order on Environmental Justice (#12898)</a>, Metropolitan Planning Organizations (MPOs) are directed to create a method for ensuring that equity issues are investigated and evaluated in transportation decision-making. There is additional guidance from the <a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank" rel="noopener">Federal Highway Administration’s (FHWA) Environmental Justice recommendations (2017)</a>, <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener">FHWA’s Title VI and Additional Nondiscrimination requirements (2017)</a>, <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_EJ_Circular_7.14-12_FINAL.pdf" target="_blank" rel="noopener">Federal Transit Administration’s (FTA) Environmental Justice policy guidance (2012), and <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank" rel="noopener">FTA’s Title VI requirements and guidelines (2012)</a>. The Indicators of Potential Disadvantage (IPD) analysis is used throughout DVRPC to demonstrate compliance with Title VI of the Civil Rights Act and support the fair treatment of population groups identified through Environmental Justice.    
+                                <p class="first-paragraph">Under <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank" rel="noopener">Title VI of the Civil Rights Act</a> and the <a href="https://www.archives.gov/files/federal-register/executive-orders/pdf/12898.pdf" target="_blank" rel="noopener">Executive Order on Environmental Justice (#12898)</a>, Metropolitan Planning Organizations (MPOs) are directed to create a method for ensuring that equity issues are investigated and evaluated in transportation decision-making. There is additional guidance from the <a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank" rel="noopener">Federal Highway Administration’s (FHWA) Environmental Justice recommendations (2017)</a>, <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener">FHWA’s Title VI and Additional Nondiscrimination requirements (2017)</a>, <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_EJ_Circular_7.14-12_FINAL.pdf" target="_blank" rel="noopener">Federal Transit Administration’s (FTA) Environmental Justice policy guidance (2012), and <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank" rel="noopener">FTA’s Title VI requirements and guidelines (2012)</a>. The Indicators of Potential Disadvantage (IPD) analysis is used throughout DVRPC to demonstrate compliance with Title VI of the Civil Rights Act and support the fair treatment of population groups identified through Environmental Justice.   
                                 </p>
                             </div>
                         </div>
+                        <div class="row">
+                            <p class="feedback"> If you have feedback on DVRPC's Equity Analysis Tool, please click the survey button in the upper right corner of this window. We appreciate your help. </p>  
+                        </div>    
                     </div>
 
                     <div class="row">
@@ -276,7 +293,7 @@
                                 </div>
                                 <div class="ipd-card-box">
                                     <div class="hp-tool-links">
-                                        <a href="#map" data-toggle="tab" ><img src="lib/images/mapiconW.png" style="float:left;margin:15px 10px 0px 3px;height:45px"/></a>
+                                        <a href="#map" data-toggle="tab" ><img src="lib/images/mapiconW.png" style="float:left;margin:15px 10px 0px 3px;height:45px" alt="Map Icon"/></a>
                                         <div class="hp-tool-links-text"><a href="#map" data-toggle="tab" ><h5 style="color:#fff !important;">VIEW MAP</h5></a>
                                         <p><a href="#map" style="color:#fff !important;">Explore IPD Scoring and Analysis</a></p>
                                         </div>
@@ -293,13 +310,13 @@
                                 </p><br>
                                 <p>
                                     For additional information on the Commission’s Title VI and EJ activities, visit DVRPC’s website:
-                                    <a href="https://www.dvrpc.org/GetInvolved/TitleVI/" target="_blank"> Title VI and Environmental Justice</a> 
+                                    <a href="https://www.dvrpc.org/GetInvolved/TitleVI/" target="_blank" rel="noopener"> Title VI and Environmental Justice</a> 
                                 </p>
                                 <div class="ipd-card-box">
                                     <div class="hp-tool-links">
-                                        <a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-tract-level-indicators-of-potential-disadvantage" target="_blank" rel="noopener"><i class="glyphicon glyphicon-list-alt" style="font-size:300%;float:left;margin:15px 15px 0px 0px;color:#fff"></i></a>
-                                        <div class="hp-tool-links-text"><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-tract-level-indicators-of-potential-disadvantage" target="_blank" rel="noopener"><h5 style="color:#fff !important;">DATA DOWNLOAD</h5></a>
-                                        <p><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-tract-level-indicators-of-potential-disadvantage" target="_blank" style="color:#fff !important;" rel="noopener">Access and download the data</a></p>
+                                        <a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage" target="_blank" rel="noopener"><i class="glyphicon glyphicon-list-alt" style="font-size:300%;float:left;margin:15px 15px 0px 0px;color:#fff"></i></a>
+                                        <div class="hp-tool-links-text"><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage" target="_blank" rel="noopener"><h5 style="color:#fff !important;">DATA DOWNLOAD</h5></a>
+                                        <p><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage" target="_blank" style="color:#fff !important;" rel="noopener">Access and download the data</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -320,7 +337,7 @@
                             <p class="first-paragraph">This webpage is a public resource using ACS data. The Delaware Valley Regional Planning Commission (DVRPC) makes no warranty, representation, or guarantee as to the content, sequence, accuracy, timeliness, or completeness of any of the spatial data or database information provided herein. DVRPC and partner state, local, and other agencies shall assume no liability for errors, omissions, or inaccuracies in the information provided regardless of how caused; or any decision made or action taken or not taken by any person relying on any information or data furnished within.</p>
                         </div>
                         <div class="col-md-4">
-                            <p class="first-paragraph">DVRPC fully complies with Title VI of the Civil Rights Act of 1964, the Civil Rights Restoration Act of 1987, Executive Order 12898 on Environmental Justice, and related nondiscrimination statutes and regulations in all programs and activities. DVRPC's website, <a href="https://www.dvrpc.org/" target="_blank"> www.dvrpc.org </a>, may be translated into multiple languages. Publications and other public documents can be made available in alternative languages and formats, if requested. DVRPC public meetings are always held in ADA-accessible facilities, and in transit-accessible locations when possible.</p>
+                            <p class="first-paragraph">DVRPC fully complies with Title VI of the Civil Rights Act of 1964, the Civil Rights Restoration Act of 1987, Executive Order 12898 on Environmental Justice, and related nondiscrimination statutes and regulations in all programs and activities. DVRPC's website, <a href="https://www.dvrpc.org/" target="_blank" rel="noopener"> www.dvrpc.org </a>, may be translated into multiple languages. Publications and other public documents can be made available in alternative languages and formats, if requested. DVRPC public meetings are always held in ADA-accessible facilities, and in transit-accessible locations when possible.</p>
                         </div>
                         <div class="col-md-4">
                             <p class="first-paragraph">Auxiliary services can be provided to individuals who submit a request at least seven days prior to a public meeting. Requests will be accommodated to the greatest extent possible. Any person who believes they have been aggrieved by an unlawful discriminatory practice by DVRPC under Title VI has a right to file a formal complaint. Any such complaint may be in writing and filed with DVRPC's Title VI Compliance Manager and/or the appropriate state or federal agency within 180 days of the alleged discriminatory occurrence.</p>
@@ -342,7 +359,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <p class="first-paragraph">
-                                    For more information on DVRPC's Title VI program or to obtain a <a href="https://www.dvrpc.org/GetInvolved/TitleVI/pdf/Title_VI_Complaint_Form.pdf" target="_blank">Title VI Complaint Form</a> please do one of the following:<br><span style="text-align: center;"><span class="disclaimer-tab-emphasis">Visit:</span> <a href="https://www.dvrpc.org/GetInvolved/TitleVI/" target="_blank">www.dvrpc.org/GetInvolved/TitleVI</a><br><span class="disclaimer-tab-emphasis">Call:</span> (215) 592-1800<br><span class="disclaimer-tab-emphasis">Email:</span> <a href="mailto:public_affairs@dvrpc.org" target="_blank">public_affairs@dvrpc.org </a></span>
+                                    For more information on DVRPC's Title VI program or to obtain a <a href="https://www.dvrpc.org/GetInvolved/TitleVI/pdf/Title_VI_Complaint_Form.pdf" target="_blank" rel="noopener">Title VI Complaint Form</a> please do one of the following:<br><span style="text-align: center;"><span class="disclaimer-tab-emphasis">Visit:</span> <a href="https://www.dvrpc.org/GetInvolved/TitleVI/" target="_blank" rel="noopener">www.dvrpc.org/GetInvolved/TitleVI</a><br><span class="disclaimer-tab-emphasis">Call:</span> (215) 592-1800<br><span class="disclaimer-tab-emphasis">Email:</span> <a href="mailto:public_affairs@dvrpc.org" target="_blank">public_affairs@dvrpc.org </a></span>
                                 </p>
                             </div>
                         </div>
@@ -477,7 +494,7 @@
                             </div>
                     <div class="row">
                         <div class="col-md-7" >
-                            <div class='ipd-chart-info'>The information below provides tract-level IPD scores and percentages for our nine indicators. The entire set of indicators may be downloaded from <a href='https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-tract-level-indicators-of-potential-disadvantage' target='_blank' rel='noopener'>DVRPC's GIS Data Portal</a> for further analysis.
+                            <div class='ipd-chart-info'>The information below provides tract-level IPD scores and percentages for our nine indicators. The entire set of indicators may be downloaded from <a href='https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage' target='_blank' rel='noopener'>DVRPC's GIS Data Portal</a> for further analysis.
                             </div>
                         </div>
                         <div class="col-md-4" id="odometer-panel">
@@ -600,7 +617,7 @@
       
                     <div class="tab-pane fade" id="Youth" value="Youth1">
                         <h4 class="modal-title" style="color:black">
-                            <img src="lib/images/Y.png">Youth
+                            <img src="lib/images/Y.png" alt="Youth Icon">Youth
                         </h4>
                         <p> The Youth indicator addresses<a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" rel="noopener" target="_blank"> FHWA’s EJ recommendation </a>to include children as a “traditionally underserved” population group when conducting equity analyses and<a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" rel="noopener" target="_blank"> FHWA’s Additional Nondiscrimination Requirement </a>under the Age Discrimination Act of 1975 to not discriminate based on age.<br><br>
                         This indicator uses age data from the ACS and includes all persons in the region under 18 years old. Use the links below to download the data for the youth population group indicator.
@@ -710,7 +727,7 @@
                         </div> 
                     </div>
                     <div class="tab-pane fade" id="Low-Income" value="Low-Income1" alt="Low Income Icon">
-                        <h4 class="modal-title" style="color:black"><img src="lib/images/LI.png"> Low-Income</h4>
+                        <h4 class="modal-title" style="color:black"><img src="lib/images/LI.png" alt="Low Income"> Low-Income</h4>
                         <p>The Low-Income indicator addresses the populations included in <a href="https://www.archives.gov/files/federal-register/executive-orders/pdf/12898.pdf" target="_blank" rel="noopener">Executive Order on Environmental Justice</a>, <a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank" rel="noopener">FHWA Environmental Justice recommendations</a>, and <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_EJ_Circular_7.14-12_FINAL.pdf" target="_blank" rel="noopener">FTA’s Environmental Justice policy guidance</a>, all of which encourage agencies to consider their impact on low-income persons.
                         </p>
                         <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/income/" rel="noopener" target="_blank">income data from the ACS</a> and includes all persons in the region who have a household income below 200% of the national poverty level. Use the links below to download the data for the low-income population group indicator.
@@ -733,6 +750,7 @@
     </div>
     <!-- /.modal --> 
 <!-- end Category Modal -->
+<!-- start Method Modal -->
                 <div class="modal fade" id="MethodModal">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
@@ -751,9 +769,34 @@
                       </div>
                     </div>
                 </div>
+<!-- end Method Modal -->
+<!-- start Survey Modal -->
+                <div class="modal fade" id="SurveyModal">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title modal-legend">IPD Web Map Survey</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                            <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd0SXyEet4RAfgdLIgJ61TFwXoqEiGPAMx_2BNoeh64JiZD.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");
+                            </script> 
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+<!-- end Survey Modal -->
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="lib/assets/jquery-ui-1.10.3.custom.min.js"></script>
+        <!-- Upgrading the jquery and jquery UI verison with the latest CDN versions-->
+        <script  src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+      
+      <!-- removing older version of jquery and jquery UI 4/6/2018
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script type="text/javascript" src="lib/assets/jquery-ui-1.10.3.custom.min.js"></script>  -->
+
         <script type="text/javascript" src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
         <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
@@ -762,7 +805,6 @@
         <script type="text/javascript" src="lib/assets/typeahead.min.js"></script>
         <script type="text/javascript" src="lib/assets/numeral.min.js"></script> 
         <script type="text/javascript" src="lib/assets/leaflet.label.js"></script> 
-     <!--   <script type="text/javascript" src="lib/assets/Control.Opacity.js"></script>  -->
 
         <script type="text/javascript" src="lib/map.js"></script><!--customized mapping functions to load data -->
      

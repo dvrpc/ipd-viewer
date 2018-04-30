@@ -39,6 +39,16 @@ h3 {
 label {
     font-weight: 400;
 }
+.logo-title{
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFF !important;
+}
+ .feedback{
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px
+}
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/
 /*------- Change to alter color theme  -------------------*/
@@ -95,8 +105,6 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 .navbar-brand{
     height: 60px;
 }
-
-
 
 .landingLink>a{
   color: #FFFFFF !important;
