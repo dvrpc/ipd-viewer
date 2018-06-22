@@ -210,13 +210,16 @@
                         <a href="#home" class="landingLink" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a>
                     </li>
                     <li class="dropdown">
-                        <a id="AboutDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;About<b class="caret"></b></a>
+                        <a id="AboutDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;Info & Data<b class="caret"></b></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="#disclaimer" class="landingLink" data-tab="disclaimer" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;Data Disclaimer</a>
                             </li>
                             <li>
                                 <a href="#page2" class="landingLink" data-tab="page2" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;Methodology</a>
+                            </li>
+                            <li>
+                               <a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#dataModal').modal('show'); return false;"><i class="glyphicon glyphicon-download-alt"></i>&nbsp;&nbsp;Access Data</a>
                             </li>
                         </ul>
                     </li>
@@ -422,7 +425,7 @@
 
                     Next, the IPD score for each tract is calculated for use in DVRPC’s policies, programs, and processes. The IPD score calculation is determined by standard deviations relative to an indicator’s regional average. This score classifies the concentration of the population groups of interest on a scale from “well below average” to “well above average” in every census tract in the region.<br><br>    
 
-                    For more information, see the Methodology section under “About” tab above.
+                    For more information, see the Methodology section under “Info & Data” tab above.
 
                     </p> 
                 </div>
@@ -494,7 +497,7 @@
                             </div>
                     <div class="row">
                         <div class="col-md-7" >
-                            <div class='ipd-chart-info'>The information below provides tract-level IPD scores and percentages for our nine indicators. The entire set of indicators may be downloaded from <a href='https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage' target='_blank' rel='noopener'>DVRPC's GIS Data Portal</a> for further analysis.
+                            <div class='ipd-chart-info'>The information below provides tract-level IPD scores and percentages for our nine indicators.
                             </div>
                         </div>
                         <div class="col-md-4" id="odometer-panel">
@@ -603,143 +606,601 @@
                             </ul>
                         </div>
                     </div>
-                    <p>The IPD score is a part of DVRPC’s Title VI compliance program, analyzing of the agency’s programs, policies, and activities. The scoring methodology calculates the percentage of each of the population groups present in every census tract in the region; compares that percentage to the regional average; and gives that concentration a score. These population groups are represented in the nine indicators of the IPD analysis. The score is determined by the concentration of that population group compared to the regional average: well below average (0 points); below average (1 point); average (2 points); above average (3 points); and well above average (4 points). The IPD score for each Census tract is the sum of the scores for each of the nine indicators in that tract.  
-                    <br><br>
-                    The entire IPD dataset can be downloaded using the links below.
+                    <p>The IPD score is a part of DVRPC’s Title VI compliance program, analyzing of the agency’s programs, policies, and activities. The scoring methodology calculates the percentage of each of the population groups present in every census tract in the region; compares that percentage to the regional average; and gives that concentration a score. These population groups are represented in the nine indicators of the IPD analysis. The score is determined by the concentration of that population group compared to the regional average: well below average (0 points); below average (1 point); average (2 points); above average (3 points); and well above average (4 points). The IPD score for each Census tract is the sum of the scores for each of the nine indicators in that tract.
                     </p>
-                    <div class="download-block">
-                        <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                        <a href="data\download\csv\ipd16_all.csv" class="download-link" download>csv</a>
-                        <a href="data\download\shp\ipd16_all.zip" class="download-link" download>shp</a>
-                        <a href="data\download\geojson\ipd16_all.json" class="download-link" download>json</a>
-                    </div>
                     </div>    
-      
                     <div class="tab-pane fade" id="Youth" value="Youth1">
                         <h4 class="modal-title" style="color:black">
                             <img src="lib/images/Y.png" alt="Youth Icon">Youth
                         </h4>
                         <p> The Youth indicator addresses<a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" rel="noopener" target="_blank"> FHWA’s EJ recommendation </a>to include children as a “traditionally underserved” population group when conducting equity analyses and<a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" rel="noopener" target="_blank"> FHWA’s Additional Nondiscrimination Requirement </a>under the Age Discrimination Act of 1975 to not discriminate based on age.<br><br>
-                        This indicator uses age data from the ACS and includes all persons in the region under 18 years old. Use the links below to download the data for the youth population group indicator.
+                        This indicator uses age data from the ACS and includes all persons in the region under 18 years old.
                         </p>
-                        <div class="download-block">
-                            <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                            <a href="data\download\csv\ipd16_youth.csv" class="download-link" download>csv</a>
-                            <a href="data\download\shp\ipd16_youth.zip" class="download-link" download>shp</a>
-                            <a href="data\download\geojson\ipd16_youth.json" class="download-link" download>json</a>
-                        </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>21.19%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>23.00%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>22.23%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>22.06%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>22.14%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>20.93%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>23.17%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>22.52%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>21.58%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>20.85%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>21.95%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>21.70%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
-
                     <div class="tab-pane fade" id="Older" value="Older1">
                         <h4 class="modal-title" style="color:black"><img src="lib/images/OA.png" alt="Older Adult Icon"> Older Adults</h4>
                         <p>The Older Adults indicator addresses the populations included in <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener">FHWA’s Additional Nondiscrimination Requirement </a> under the Age Discrimination Act of 1975 and <a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank" rel="noopener"> FHWA Environmental Justice recommendations </a> to not discriminate based on age.
                         </p>    
-                        <p>This indicator uses age data from the ACS and includes all persons in the region 65 years and older. Use the links below to download the data for the older adult population group indicator.
+                        <p>This indicator uses age data from the ACS and includes all persons in the region 65 years and older.
                         </p>
-                            <div class="download-block">
-                                <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                                <a href="data\download\csv\ipd16_olderAdults.csv" class="download-link" download>csv</a>
-                                <a href="data\download\shp\ipd16_olderAdults.zip" class="download-link" download>shp</a>
-                                <a href="data\download\geojson\ipd16_olderAdults.json" class="download-link" download>json</a>
-                            </div>
-                        </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>15.88%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>14.59%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>14.43%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>13.51%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>14.73%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>16.98%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>15.09%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>14.82%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>16.75%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>13.33%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>16.04%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>14.93%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                        <div class="tab-pane fade" id="Female" value="Female1">
+                    <div class="tab-pane fade" id="Female" value="Female1">
                         <h4 class="modal-title" style="color:black"><img src="lib/images/F.png" alt="Female Icon"> Female</h4>
                         <p>The Female indicator addresses <a href="https://www.fhwa.dot.gov/legsregs/directives/fapg/cfr0200.htm" target="_blank" rel="noopener">FHWA’s Additional Nondiscrimination Requirement </a> under Section 162 (a) of the Federal-Aid Highway Act of 1973 (23 USC 324) that no person shall be subject to discrimination on the basis of sex under any program or activity receiving Federal assistance. This additional Nondiscrimination Requirement is connected to Title IX of the Civil Rights Act, which designates women as a protected class.
                         </p>
 
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/sex/" rel="noopener" target="_blank"> sex data from the ACS </a> and captures the Census Bureau's estimate of all persons identifying as female when given the choice of male or female on the survey form. Use the links below to download the data for the female population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/sex/" rel="noopener" target="_blank"> sex data from the ACS </a> and captures the Census Bureau's estimate of all persons identifying as female when given the choice of male or female on the survey form.
                         </p>
-                            <div class="download-block">
-                                <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                                <a href="data\download\csv\ipd16_female.csv" class="download-link" download>csv</a>
-                                <a href="data\download\shp\ipd16_female.zip" class="download-link" download>shp</a>
-                                <a href="data\download\geojson\ipd16_female.json" class="download-link" download>json</a>
-                            </div>
-                     </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>50.61%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>51.71%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>51.29%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>50.43%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>51.05%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>51.01%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>50.95%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>52.52%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>51.41%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>52.49%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>51.43%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>51.62%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div class="tab-pane fade" id="Racial" value="Racial1">
                         <h4 class="modal-title" style="color:black"><img src="lib/images/RM.png" alt="Racial Minority Icon"> Racial Minority</h4>
                         <p>The Racial Minority indicator addresses the populations included in <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank" rel="noopener"> Title VI of the Civil Rights Act</a>,  <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener"> FHWA’s Title VI and Additional Nondiscrimination Requirements </a>, and  <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank" rel="noopener"> FTA’s Title VI requirements and guidelines </a>, all of which prohibit discrimination of persons in the United States based on race.
                         </p>
                     
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/race/" rel="noopener" target="_blank"> race data from the ACS </a>and includes all persons in the region who identified themselves as one or more of the following races in their Census form: Black or African American, American Indian, Alaskan Native, Asian Indian, Japanese, Native Hawaiian, Chinese, Korean, Guamanian or Chamorro, Filipino, Vietnamese, Samoan, Other Asian, and/or Other Pacific Islander. Use the links below to download the data for the racial minority population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/race/" rel="noopener" target="_blank"> race data from the ACS </a>and includes all persons in the region who identified themselves as one or more of the following races in their Census form: Black or African American, American Indian, Alaskan Native, Asian Indian, Japanese, Native Hawaiian, Chinese, Korean, Guamanian or Chamorro, Filipino, Vietnamese, Samoan, Other Asian, and/or Other Pacific Islander.
                         </p>
-                            <div class="download-block">
-                                <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                                <a href="data\download\csv\ipd16_race.csv" class="download-link" download>csv</a>
-                                <a href="data\download\shp\ipd16_race.zip" class="download-link" download>shp</a>
-                                <a href="data\download\geojson\ipd16_race.json" class="download-link" download>json</a>
-                            </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>29.14%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>35.68%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>17.25%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>39.66%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>31.48%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>10.80%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>13.45%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>32.20%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>19.63%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>58.30%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>19.35%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>33.42%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                                 
                     <div class="tab-pane fade" id="Ethnic" value="Ethnic1">
                         <h4 class="modal-title" style="color:black"><img src="lib/images/EM.png" alt="Ethnic Minority Icon"> Ethnic Minority </h4>
                         <p>The Ethnic Minority indicator addresses the populations included in <a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank" rel="noopener"> Title VI of the Civil Rights Act</a>,  <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener"> FHWA’s Title VI and Additional Nondiscrimination Requirements </a>, and  <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank" rel="noopener"> FTA’s Title VI requirements and guidelines </a>, and the recommendation to consider minority under the <a href="https://www.archives.gov/files/federal-register/executive-orders/pdf/12898.pdf" target="_blank" rel="noopener"> Executive Order on Environmental Justice </a>.
                         </p>
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/ethnicity/" rel="noopener" target="_blank">ethnicity data from the ACS </a> and includes all persons in the region who identified themselves as being of Hispanic, Latino, Spanish, Mexican, Chicano, Cuban, Puerto Rican, or Other Hispanic origin. Use the links below to download the data for the ethnic minority population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/ethnicity/" rel="noopener" target="_blank">ethnicity data from the ACS </a> and includes all persons in the region who identified themselves as being of Hispanic, Latino, Spanish, Mexican, Chicano, Cuban, Puerto Rican, or Other Hispanic origin.
                         </p>
-                            <div class="download-block">
-                                <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                                <a href="data\download\csv\ipd16_ethnic.csv" class="download-link" download>csv</a>
-                                <a href="data\download\shp\ipd16_ethnic.zip" class="download-link" download>shp</a>
-                                <a href="data\download\geojson\ipd16_ethnic.json" class="download-link" download>json</a>
-                            </div> 
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>7.94%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>15.04%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>5.66%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>18.66%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>12.10%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>4.83%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>7.38%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>3.62%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>4.89%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>11.95%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>5.05%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>8.91%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-pane fade" id="Foreign" value="Foreign1">
-                        <h4 class="modal-title" style="color:black"><img src="lib/images/FB.png" alt="Foreign Born Icon"> Foreign BORN</h4>
+                        <h4 class="modal-title" style="color:black"><img src="lib/images/FB.png" alt="Foreign Born Icon"> Foreign Born</h4>
                         <p>The Foreign Born indicator addresses the populations included in<a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank" rel="noopener"> Title VI of the Civil Rights Act</a>,  <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener"> FHWA’s Title VI and Additional Nondiscrimination Requirements </a>, and  <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank" rel="noopener"> FTA’s Title VI requirements and guidelines </a>, all of which prohibit discrimination of persons in the United States based on national origin.
                         </p>
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/citizenship/" rel="noopener" target="_blank">national origin data from the ACS </a> and includes all persons in the region who indicated they were born outside of the United States in their Census form.  Use the links below to download the data for the foreign born population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/citizenship/" rel="noopener" target="_blank">national origin data from the ACS </a> and includes all persons in the region who indicated they were born outside of the United States in their Census form.
                         </p>
-                        <div class="download-block">
-                            <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                            <a href="data\download\csv\ipd16_foreign.csv" class="download-link" download>csv</a>
-                            <a href="data\download\shp\ipd16_foreign.zip" class="download-link" download>shp</a>
-                            <a href="data\download\geojson\ipd16_foreign.json" class="download-link" download>json</a>
-                        </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>9.00%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>10.08%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>5.25%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>21.15%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>11.20%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>8.29%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>8.86%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>9.38%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>10.13%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>12.11%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>9.29%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>10.60%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-pane fade" id="LEP" value="LEP1">
                         <h4 class="modal-title" style="color:black"> <img src="lib/images/LEP.png" alt="LEP Icon"> Limited English Proficiency (LEP)</h4>
                         <p>The Limited English Proficiency indicator addresses the populations included in<a href="https://www.justice.gov/crt/fcs/TitleVI-Overview" target="_blank" rel="noopener"> Title VI of the Civil Rights Act</a>, <a href="https://www.gpo.gov/fdsys/pkg/FR-2000-08-16/pdf/00-20938.pdf" target="_blank" rel="noopener"> Executive Order 13166, "Improving Access to Services for Persons with Limited English Proficiency"</a>,<a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener"> FHWA’s Title VI and Additional Nondiscrimination Requirements </a>, and  <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_Title_VI_FINAL.pdf" target="_blank" rel="noopener"> FTA’s Title VI requirements and guidelines </a>, all of which prohibit discrimination of persons in the United States based on race and national origin.
                         </p>
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/language/" rel="noopener" target="_blank"> language data from the ACS</a> and includes all persons in the region who indicated they speak English less than “very well.”  Use the links below to download the data for the limited english proficiency population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/language/" rel="noopener" target="_blank"> language data from the ACS</a> and includes all persons in the region who indicated they speak English less than “very well”. 
                         </p>
-                            <div class="download-block">
-                                <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                                <a href="data\download\csv\ipd16_lep.csv" class="download-link" download>csv</a>
-                                <a href="data\download\shp\ipd16_lep.zip" class="download-link" download>shp</a>
-                                <a href="data\download\geojson\ipd16_lep.json" class="download-link" download>json</a>
-                            </div>   
-                        </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>3.97%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>7.76%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>2.97%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>12.53%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>6.80%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>3.78%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>4.59%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>4.13%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>4.37%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>9.10%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>4.22%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>6.28%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="tab-pane fade" id="Disabled" value="Disabled1">
                         <h4 class="modal-title" style="color:black"><img src="lib/images/D.png" alt="Disable Icon"> Disabled</h4>
                         <p>The Disabled indicator addresses the populations included in <a href="https://www.fhwa.dot.gov/civilrights/programs/tvi.cfm" target="_blank" rel="noopener">FHWA’s Title VI and Additional Nondiscrimination Requirements under Section 504 of the Rehabilitation Act of 1973 and Americans With Disabilities Act of 1990</a>, which protect persons with a disability against discrimination.
                         </p>
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/disability/" rel="noopener" target="_blank">disability data from the ACS</a> and includes all persons in the region who indicated they experience one or more physical and/or mental disabilities. Use the links below to download the data for the disabled population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/disability/" rel="noopener" target="_blank">disability data from the ACS</a> and includes all persons in the region who indicated they experience one or more physical and/or mental disabilities.
                         </p>
-                        <div class="download-block">
-                            <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                            <a href="data\download\csv\ipd16_disabled.csv" class="download-link" download>csv</a>
-                            <a href="data\download\shp\ipd16_disabled.zip" class="download-link" download>shp</a>
-                            <a href="data\download\geojson\ipd16_disabled.json" class="download-link" download>json</a>
-                        </div> 
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>11.76%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>13.73%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>12.96%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>10.89%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>12.45%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>10.98%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>8.59%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>12.20%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>10.34%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>16.27%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>10.59%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>12.67%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-pane fade" id="Low-Income" value="Low-Income1" alt="Low Income Icon">
                         <h4 class="modal-title" style="color:black"><img src="lib/images/LI.png" alt="Low Income"> Low-Income</h4>
                         <p>The Low-Income indicator addresses the populations included in <a href="https://www.archives.gov/files/federal-register/executive-orders/pdf/12898.pdf" target="_blank" rel="noopener">Executive Order on Environmental Justice</a>, <a href="https://www.fhwa.dot.gov/environment/environmental_justice/equity/" target="_blank" rel="noopener">FHWA Environmental Justice recommendations</a>, and <a href="https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/FTA_EJ_Circular_7.14-12_FINAL.pdf" target="_blank" rel="noopener">FTA’s Environmental Justice policy guidance</a>, all of which encourage agencies to consider their impact on low-income persons.
                         </p>
-                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/income/" rel="noopener" target="_blank">income data from the ACS</a> and includes all persons in the region who have a household income below 200% of the national poverty level. Use the links below to download the data for the low-income population group indicator.
+                        <p>This indicator uses <a href="https://www.census.gov/acs/www/about/why-we-ask-each-question/income/" rel="noopener" target="_blank">income data from the ACS</a> and includes all persons in the region who have a household income below 200% of the national poverty level.
                         </p>
-                            <div class="download-block">
-                                <p>Download Links&nbsp;<i class="glyphicon glyphicon-download"></i>&nbsp;</p>
-                                <a href="data\download\csv\ipd16_lowIncome.csv" class="download-link" download>csv</a>
-                                <a href="data\download\shp\ipd16_lowIncome.zip" class="download-link" download>shp</a>
-                                <a href="data\download\geojson\ipd16_lowIncome.json" class="download-link" download>json</a>
-                            </div>
-                        </div>
-                      </div>
+                        <table class="ave_table">
+                            <thead>
+                            <tr>
+                            <th>Geography</th>
+                            <th>Average Youth Percentage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Burlington</td>
+                            <td>18.44%</td>
+                            </tr>
+                            <tr>
+                            <td>Camden</td>
+                            <td>28.91%</td>
+                            </tr>
+                            <tr>
+                            <td>Gloucester</td>
+                            <td>19.76%</td>
+                            </tr>
+                            <tr>
+                            <td>Mercer</td>
+                            <td>29.90%</td>
+                            </tr>
+                            <tr>
+                            <td><B>NJ Counties</B></td>
+                            <td><B>24.45%</B></td>
+                            </tr>
+                            <tr>
+                            <td>Bucks</td>
+                            <td>17.09%</td>
+                            </tr>
+                            <tr>
+                            <td>Chester</td>
+                            <td>18.66%</td>
+                            </tr>
+                            <tr>
+                            <td>Delaware</td>
+                            <td>26.81%</td>
+                            </tr>
+                            <tr>
+                            <td>Montgomery</td>
+                            <td>17.97%</td>
+                            </tr>
+                            <tr>
+                            <td>Philadelphia</td>
+                            <td>46.70%</td>
+                            </tr>
+                            <tr>
+                            <td><B>PA Suburbs</B></td>
+                            <td><B>19.96%</B></td>
+                            </tr>
+                            <tr>
+                            <td><B>DVRPC</B></td>
+                            <td><B>28.57%</B></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
                   </div>
                   </div>
                 </div>
@@ -763,13 +1224,47 @@
 
                          Next, the IPD score for each tract is calculated for use in DVRPC’s policies, programs, and processes. The IPD score calculation is determined by standard deviations relative to an indicator’s regional average. This score classifies the concentration of the population groups of interest on a scale from “well below average” to “well above average” in every census tract in the region.<br><br>    
 
-                         For more information, see the Methodology section under the “About” tab.
+                         For more information, see the Methodology section under the “Info & Data” tab.
                         </p>   
                         </div>
                       </div>
                     </div>
                 </div>
 <!-- end Method Modal -->
+
+                  <!-- AGS link Modal -->
+        <div class="modal fade" id="dataModal">
+            <div class="modal-dialog" style="width:710px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h4 class="modal-title modal-legend">Access our data</h4>
+                    </div>
+                        <div class="modal-body">
+                        <div class="clearfix">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <b>Download Data - </b>The entire set of indicators data and scores may be downloaded from DVRPC's GIS Data Portal for further analysis.<br><br>
+                                    DVRPC - 2016 Indicators of Potential Disadvantage : <a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage" target="_new">https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2016-indicators-of-potential-disadvantage</a>
+                               
+                                </div>
+                              <!--   <div class="col-xs-4 text-right"><img src="lib/images/ags_connect.png" alt=""></div> -->
+                            </div>
+                          <!-- HOLD FOR Release
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <b>ArcGIS for Desktop - </b> Copy and paste the URL below to access our ArcGIS Server map services.
+                                    <pre data-initialized="true"><code>https://arcgis.dvrpc.org/arcgis/rest/services</code></pre>
+                                    The IDP Feature Service is located within the 'Planning' folder.
+                                </div>
+                                <div class="col-xs-4 text-right"><img src="//www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" alt=""></div>
+                            </div>
+                            -->
+                        </div>
+                    </div><!-- /.modal-body -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog
 <!-- start Survey Modal -->
                 <div class="modal fade" id="SurveyModal">
                     <div class="modal-dialog modal-lg">
