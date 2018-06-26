@@ -259,7 +259,7 @@ box-shadow: 0 0 10px #b7b7b7;
 }
 
 .ipd-card-box{
-    max-width: 50%;
+ /*   max-width: 50%; */
     margin: 20px auto;
     bottom: 50px;
     left: 0;
