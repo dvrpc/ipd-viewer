@@ -21,10 +21,33 @@ h1,h2,h3,h4,h5,h6 {
     font-family:"Open Sans", sans-serif;
     font-weight: 500;
     line-height: 1.1;
-    color: #582267;
+    color: #434343;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 5px 0;
+    color: #333;
+}
+.home-headers {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    color: rgb(88,34,103);
 }
 label {
     font-weight: 400;
+}
+.logo-title{
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFF !important;
+}
+ .feedback{
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px
 }
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/
@@ -48,6 +71,9 @@ body, .landing, #sidebar {
     background-color: #DDD;
     border-color:#DDD;
 }
+.navbar-nav.navbar-right:last-child{
+margin-right: 5px;
+}
 .footer_btn, #infoheader, .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus, .navbar-nav>li>a, .navbar-nav>li>.dropdown  {
   background-color: #E9E9E9;  
 }
@@ -61,16 +87,23 @@ body, .landing, #sidebar {
 .hp-link {
     color:white !important;
 }
-a, .navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
-    color: #792f8d !important;
+.navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
+    color: #434343 !important;
 }
+/*a, .navbar-inverse .navbar-nav>li>a, .footer_btn, .chkicon, .legend-check i {
+    color: #434343 !important;
+} */
 .navbar-inverse .navbar-toggle .icon-bar{
   /*  background-color: #6689BC !important; */
     background-color: #008d92 !important;  
 }
 a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-check i:hover{
   /*  color: #5876A2 !important; */
-    color: #004649 !important; 
+    color: #434343 !important; 
+}
+
+.navbar-brand{
+    height: 60px;
 }
 
 .landingLink>a{
@@ -100,9 +133,6 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 }
 .leaflet-bar a, .leaflet-bar a:hover {
  color: #6689BC !important;
-}
-a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-check i:hover{
-    color: #5876A2 !important;
 }
 .input-group #searchbox.form-control {
     float: right;
@@ -139,13 +169,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     font-weight: bold;
     text-shadow: 0px 1px 0px rgb(255, 255, 255);
 }
-h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 10px;
-    padding: 5px 0;
-    color: #333;
-}
+
 /*--------------------------------------------------------*/
 /*--------  TOD Home Page  Color Styles  ---------------------*/
 /*--------------------------------------------------------*/
@@ -190,29 +214,70 @@ h3 {
     min-height: 57px;
     border-bottom: 1px solid #ddd;
     background-color: #efefef;
-    background-image: url(images/p5.png);
+}
+.disclaimer-tab-header{
+    text-align: center;
+    color: #582267;
+}
+
+.disclaimer-tab-emphasis{
+    color: #582267;
+    text-shadow: 0 0.025em #582267, 0 -0.025em #582267, 0.02em 0 #333, -0.02em 0 #582267;
 }
 .ipd-info {
     color: black;
     font-size: 14px;
     overflow-y: auto;
 }
+
+.bottom-row{
+    margin-top: 25px;
+    height: 350px;
+}
 .title-vi-info{
-background-color: rgba(88,34,103.65);
-color: white;
+background-color: #fff;
+color: #434343;
 font-size: 14px;
-overflow-y: auto;
+overflow-y: hidden;
 border-left: 2px solid #fff;
-padding: 10px 25px 5px;
+padding: 10px 25px 25px;
 margin: 0px;
+box-shadow: 0 0 10px #b7b7b7;
+}
+
+.home-headers-2{
+    font-weight: 700;
+    color: rgb(88,34,103);
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+.ipd-factor-list{
+    font-size: .9em;
+    padding: 0;
+    margin: auto;
+}
+
+.ipd-card-box{
+ /*   max-width: 50%; */
+    margin: 20px auto;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+@media screen and (max-width: 1200px){
+    .ipd-card-box{
+        width: 100%;
+        bottom: 0;
+    }
 }
 .ipd-method h3 {
   /*  background-color: rgba(36,171,226,.85); */
     color: white;
 }
 .ipd-method {
- background-color: rgba(88,34,103.65);
-color: white;
+background-color: #fff;
+color: #434343;
 font-size: 14px;
 overflow-y: auto;
 border-left: 2px solid #fff;
@@ -220,11 +285,12 @@ padding: 10px 25px 5px;
 margin: 0px;
 }
 .hp-tool-links {
-    background-color: #FFF;
+    background-color: rgb(88,34,103);
     border: 1px solid #B7B7B7;
     text-align: center;
     padding: 10px 20px 20px;
     transition: all .3s ease-in-out;
+    color: #fff;
 }
 .hp-tool-links, .stat-block {
     box-shadow: 0 0 10px #b7b7b7;
@@ -284,3 +350,61 @@ margin: 0px;
     border: none;
     background: none;
 }
+
+.tab-image{
+    text-align: center;
+}
+.tab-image>img{
+    display: inline-block;
+    margin: 0 5px
+}
+.tab-image>figcaption{
+    text-align: left;
+    margin: 20px 0;
+
+}
+/* INDICATOR MODALS - DOWNLOAD LINKS (Robert Beatty: 3/5/2018) */
+    .download-block{
+        display: inline-block;
+        float: right;
+        width: 80%;
+        margin: auto;
+    }
+    .download-block>p{
+        display: inline;
+    }
+    .download-link{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    table.ave_table {
+      border: 1px solid #1C6EA4;
+      background-color: #EEEEEE;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+    table.ave_table td, table.ave_table th {
+      border: 1px solid #AAAAAA;
+      padding: 3px 2px;
+    }
+    table.ave_table tbody td tr {
+      font-size: 11px;
+    }
+    table.ave_table tr:nth-child(even) {
+      background-color: #fff;
+    }
+    table.ave_table thead {
+      background-color: #434343 !important;;
+      border-bottom: 2px solid #444444;
+    }
+    table.ave_table thead th {
+      font-size: 15px;
+      font-weight: bold;
+      color: #FFFFFF;
+      border-left: 2px solid #D0E4F5;
+      text-align: center;
+    }
+    table.ave_table thead th:first-child {
+       border-left: none;  
+    }
