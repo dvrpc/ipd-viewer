@@ -11,8 +11,12 @@
 
         <!-- Start Load CSS -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <!-- <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+
         <link href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" rel="stylesheet" type="text/css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
         <link rel="stylesheet" type="text/css" href="lib/assets/typeahead.min.css" >
         <link rel="stylesheet" type="text/css" href="lib/core/core.css">
@@ -20,7 +24,6 @@
         <link rel="stylesheet" type="text/css" href="lib/css/leaflet_label.css">
         <link rel="stylesheet" type="text/css" href="lib/css/style.css" />
         <link rel="stylesheet" type="text/css" href="lib/css/jquery-ui-1.10.3.custom.min.css"/>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <!-- End Load CSS -->
         <!-- Odometr -->
         <link rel="stylesheet" href="https://unpkg.com/odometer@0.4.6/themes/odometer-theme-minimal.css" />
@@ -77,7 +80,7 @@
                 }
             }
             @media (max-width: 1170px) {
-                .btn-success{
+                .btn-primary{
                    display: none;
                 }
             }
@@ -227,7 +230,7 @@
                         <a href="#map" data-tab="map" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;View Map</a>
                     </li>
                 </ul>
-                  <button type="button" style=" margin:10px 10px 0px 0px;float:right;" class="btn btn-sm btn-success"<a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="surveylaunch(); return false;"><i class="glyphicon glyphicon-pencil" ></i>&nbsp;&nbsp;<b>We want your feedback</b></a>
+                  <button type="button" style=" margin:10px 10px 0px 0px;float:right;" class="btn btn-sm btn-primary"<a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="surveylaunch(); return false;"><i class="glyphicon glyphicon-pencil" ></i>&nbsp;&nbsp;<b>We want your feedback</b></a>
                     </button>
             </div><!--/.navbar-collapse -->
         </div>
@@ -298,9 +301,9 @@
                                     <div class="col-md-6">
                                         <div class="ipd-card-box">
                                         <div class="hp-tool-links">
-                                        <a href="#map" data-toggle="tab" ><img src="lib/images/mapiconW.png" style="float:left;margin:15px 10px 0px 3px;height:45px" alt="Map Icon"/></a>
-                                        <div class="hp-tool-links-text"><a href="#map" data-toggle="tab" ><h5 style="color:#fff !important;">VIEW MAP</h5></a>
-                                        <p><a href="#map" style="color:#fff !important;">Explore IPD Scoring and Analysis</a></p>
+                                        <a href="#map" data-toggle="tab" aria-label="View Map"><img src="lib/images/mapiconW.png" style="float:left;margin:15px 10px 0px 3px;height:45px" alt="Map Icon"/></a>
+                                        <div class="hp-tool-links-text"><a href="#map" data-toggle="tab" aria-label="View Map"><h5 style="color:#fff !important;">VIEW MAP</h5></a>
+                                        <p><a href="#map" style="color:#fff !important;" aria-label="View Map">Explore IPD Scoring and Analysis</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -308,8 +311,8 @@
                                     <div class="col-md-6">
                                         <div class="ipd-card-box">
                                         <div class="hp-tool-links">
-                                        <a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2018-tract-level-indicators-of-potential-disadvantage-" target="_blank" rel="noopener"><i class="glyphicon glyphicon-list-alt" style="font-size:300%;float:left;margin:15px 15px 0px 0px;color:#fff"></i></a>
-                                        <div class="hp-tool-links-text"><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2018-tract-level-indicators-of-potential-disadvantage-" target="_blank" rel="noopener"><h5 style="color:#fff !important;">DATA DOWNLOAD</h5></a>
+                                        <a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2018-tract-level-indicators-of-potential-disadvantage-" target="_blank" rel="noopener" aria-label="data download"><i class="glyphicon glyphicon-list-alt" style="font-size:300%;float:left;margin:15px 15px 0px 0px;color:#fff"></i></a>
+                                        <div class="hp-tool-links-text"><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2018-tract-level-indicators-of-potential-disadvantage-" target="_blank" rel="noopener" aria-label="data download"><h5 style="color:#fff !important;">DATA DOWNLOAD</h5></a>
                                         <p><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-2018-tract-level-indicators-of-potential-disadvantage-" target="_blank" style="color:#fff !important;" rel="noopener">Access and download the data</a></p>
                                     </div>
                                     </div>
@@ -538,7 +541,7 @@
             <div style="height:45px;color:white;margin-top:3px">
                 <!-- Landing Footer -->
                 <div id="LandingFooter" class="center">
-                    <p>Equity Analyses within the Greater Philadelphia (&nbsp;Version 2.0&nbsp;)&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#disclaimer" class="hp-link" >&nbsp;&nbsp;Disclaimer</a></p>
+                    <p>Equity Analyses within the Greater Philadelphia (&nbsp;Version 2.0&nbsp;)&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#disclaimer" class="hp-link" aria-label="disclaimer">&nbsp;&nbsp;Disclaimer</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.dvrpc.org/policies/" target="_new" class="hp-link" aria-label="policies" style="color: #fff !important"> Policies</a></p>
                 </div>  
             </div>
         </div> 
@@ -1292,21 +1295,17 @@
                 </div>
 <!-- end Survey Modal -->
 
-
-
-
         <!-- Upgrading the jquery and jquery UI verison with the latest CDN versions-->
-        <!-- https://code.jquery.com/jquery-3.5.0.js-->
-        <script  src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-      
-      <!-- removing older version of jquery and jquery UI 4/6/2018
-            <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-            <script type="text/javascript" src="lib/assets/jquery-ui-1.10.3.custom.min.js"></script>  -->
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <!-- Remove old jquery 
+        <script  src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+
+        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <!-- remove old bootstrap 5-1-2020 <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 
         <script type="text/javascript" src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
-        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
         <script src="https://code.highcharts.com/highcharts.js"></script>
 
         <script type="text/javascript" src="lib/assets/typeahead.min.js"></script>
@@ -1318,7 +1317,7 @@
         <script type="text/javascript" src="lib/core/core.js"></script><!--core application functions -->
 
 
-    <script>var _gaq=[['_setAccount','UA-9825778-1'],['_trackPageview']];(function(d){var g=d.createElement('script'),s=d.scripts[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document))</script>
+         <script>var _gaq=[['_setAccount','UA-9825778-1'],['_trackPageview']];(function(d){var g=d.createElement('script'),s=d.scripts[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document))</script>
 
     </body>
 </html>
