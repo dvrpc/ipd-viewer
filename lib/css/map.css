@@ -240,6 +240,10 @@ margin: 15px 0px 15px 15px;
   font-size: 14px;
   margin: 5px 10px;
 }
+#ipd-f{
+  background-color: #6e6e6e;
+  opacity: .3;
+}
 #ipd-e{
   background-color: #253494;
 }
