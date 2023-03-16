@@ -1,5 +1,5 @@
 # IPD v2.0
-## Indicators of Potential Disadvantage
+## Indicators of Potential Disadvantage (2021)
 The IPD analysis identifies populations of interest under Title VI and EJ using U.S. Census American Community Survey (ACS) five-year estimates data and maps these populations in each of the Census tracts in the region. Each population group is an “indicator” in the analysis and includes the following:
 <ul>
   <li>Youth</li>
@@ -21,4 +21,4 @@ The IPD analysis identifies populations of interest under Title VI and EJ using 
 - [numeral.js](http://numeraljs.com/)
 
 ## Geospatial Data dependencies
-[2020 Tract-level Indicators of Potential Disadvantage for the DVRPC Region](https://arcgis.dvrpc.org/portal/rest/services/Demographics/IPD_2020/FeatureServer)
+[2021 Tract-level Indicators of Potential Disadvantage for the DVRPC Region](https://arcgis.dvrpc.org/portal/rest/services/Demographics/ipd_2021/MapServer)
